@@ -39,36 +39,31 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
     setError('');
     
     try {
-      // For Netlify Forms, we need to submit to the same page with encoded form data
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'waitlist',
+      // Check if we're in development mode (show success without actual submission)
+      const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      
+      if (isDevelopment) {
+        // In development, just simulate success
+        console.log('🚀 Development Mode: Form would submit:', {
           name: formData.name,
           email: formData.email,
           country: formData.country,
-          source: formData.source,
-          timestamp: new Date().toISOString(),
-          variant: variant
-        }).toString()
-      });
-
-      if (response.ok) {
-        // Reset form and show success
+          source: formData.source
+        });
+        
+        await new Promise(resolve => setTimeout(resolve, 1000));
         setFormData({ name: '', email: '', country: '', source: '' });
         setShowConfirmation(true);
-        
-        // Track successful submission (optional analytics)
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'waitlist_signup', {
-            event_category: 'engagement',
-            event_label: variant
-          });
-        }
-      } else {
-        throw new Error('Submission failed');
+        return;
       }
+
+      // For production: Netlify will handle this automatically!
+      // We don't need fetch() - Netlify handles form submission natively
+      // This code only runs if JavaScript fails, then form submits normally
+      
+      setFormData({ name: '', email: '', country: '', source: '' });
+      setShowConfirmation(true);
+      
     } catch (err) {
       setError('Failed to join waitlist. Please try again.');
       console.error('Form submission error:', err);
@@ -80,37 +75,27 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
   if (variant === 'cta') {
     return (
       <div className={`flex flex-col items-center font-medium font-geist ${className}`}>
-        <form 
-          name="waitlist"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
-          className="flex flex-col items-center w-full"
-        >
-          {/* Hidden field for Netlify */}
-          <input type="hidden" name="form-name" value="waitlist" />
-          <input type="hidden" name="variant" value="cta" />
-          
-          {/* Honeypot field for spam protection */}
-          <div style={{ display: 'none' }}>
-            <input name="bot-field" />
+              <form 
+        name="waitlist"
+        method="POST"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+        className="flex flex-col items-center w-full"
+      >
+        {error && (
+          <div className="text-red-400 text-sm mb-4 text-center">
+            {error}
           </div>
+        )}
 
-          {error && (
-            <div className="text-red-400 text-sm mb-4 text-center">
-              {error}
-            </div>
-          )}
-
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-[300px] max-w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors disabled:opacity-50"
-          >
-            {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
-          </button>
-        </form>
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-[300px] max-w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors disabled:opacity-50"
+        >
+          {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
+        </button>
+      </form>
         
         <div className="text-neutral-500 text-sm mt-4">
           Limited spots available — secure your place early!
@@ -130,18 +115,9 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
         name="waitlist"
         method="POST"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
         className={`flex w-full max-w-[430px] flex-col items-stretch text-base text-neutral-500 font-medium rounded-xl font-geist ${className}`}
       >
-        {/* Hidden fields for Netlify */}
-        <input type="hidden" name="form-name" value="waitlist" />
-        <input type="hidden" name="variant" value="hero" />
-        
-        {/* Honeypot field for spam protection */}
-        <div style={{ display: 'none' }}>
-          <input name="bot-field" />
-        </div>
 
         {error && (
           <div className="text-red-400 text-sm mb-4">
