@@ -12,6 +12,7 @@ Your waitlist form is **already functional** with Netlify Forms! Here are all th
 - ✅ **Data export**: CSV download
 - ✅ **Dashboard**: View submissions in Netlify admin
 
+
 **How to access submissions:**
 1. Deploy to Netlify (or Vercel with Netlify Forms plugin)
 2. Go to your Netlify dashboard → Site → Forms

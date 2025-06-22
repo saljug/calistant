@@ -63,7 +63,18 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
       }
 
       // Submit to Airtable
-      const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_NAME}`, {
+      console.log('Submitting to Airtable:', {
+        baseId: AIRTABLE_BASE_ID,
+        tableName: AIRTABLE_TABLE_NAME,
+        data: {
+          Name: formData.name,
+          Email: formData.email,
+          Country: formData.country,
+          Source: formData.source
+        }
+      });
+
+      const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${AIRTABLE_API_KEY}`,
@@ -81,6 +92,15 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
           }]
         })
       });
+
+      console.log('Response status:', response.status);
+      console.log('Response headers:', response.headers);
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Airtable API error:', errorText);
+        throw new Error(`Airtable API error: ${response.status} - ${errorText}`);
+      }
 
       if (response.ok) {
         // Success!
@@ -101,6 +121,12 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
     } catch (err) {
       setError('Failed to join waitlist. Please try again.');
       console.error('Form submission error:', err);
+      console.error('Full error details:', err);
+      
+      // Log more details for debugging
+      if (err instanceof Error) {
+        console.error('Error message:', err.message);
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -109,24 +135,93 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
   if (variant === 'cta') {
     return (
       <div className={`flex flex-col items-center font-medium font-geist ${className}`}>
-              <form 
-        onSubmit={handleSubmit}
-        className="flex flex-col items-center w-full"
-      >
-        {error && (
-          <div className="text-red-400 text-sm mb-4 text-center">
-            {error}
-          </div>
-        )}
-
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-[300px] max-w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors disabled:opacity-50"
+        <form 
+          onSubmit={handleSubmit}
+          className="flex flex-col items-center w-full max-w-[430px]"
         >
-          {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
-        </button>
-      </form>
+          {error && (
+            <div className="text-red-400 text-sm mb-4 text-center">
+              {error}
+            </div>
+          )}
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={(e) => handleInputChange('name', e.target.value)}
+            required
+            className="text-neutral-500 self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 placeholder:text-neutral-500"
+          />
+          
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={(e) => handleInputChange('email', e.target.value)}
+            required
+            className="text-neutral-500 self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 mt-4 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 placeholder:text-neutral-500"
+          />
+          
+          <div className="relative mt-4 w-full">
+            <select
+              name="country"
+              value={formData.country}
+              onChange={(e) => handleInputChange('country', e.target.value)}
+              required
+              className="text-neutral-500 appearance-none self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 cursor-pointer"
+            >
+              <option value="">Country</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="UK">United Kingdom</option>
+              <option value="AU">Australia</option>
+              <option value="DE">Germany</option>
+              <option value="FR">France</option>
+              <option value="TR">Turkey</option>
+              <option value="other">Other</option>
+            </select>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/23bbd05afb8dc449c617176fc2e326a201cf6d5a?placeholderIfAbsent=true"
+              className="absolute right-3.5 top-1/2 transform -translate-y-1/2 aspect-[1] object-contain w-6 pointer-events-none"
+              alt="Dropdown arrow"
+            />
+          </div>
+          
+          <div className="relative mt-4 w-full">
+            <select
+              name="source"
+              value={formData.source}
+              onChange={(e) => handleInputChange('source', e.target.value)}
+              required
+              className="text-neutral-500 appearance-none self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 cursor-pointer"
+            >
+              <option value="">Where did you hear about us?</option>
+              <option value="social">Social Media</option>
+              <option value="search">Search Engine</option>
+              <option value="friend">Friend/Family</option>
+              <option value="blog">Blog/Article</option>
+              <option value="ad">Advertisement</option>
+              <option value="startup_house">YTU Startup House</option>
+              <option value="other">Other</option>
+            </select>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/23bbd05afb8dc449c617176fc2e326a201cf6d5a?placeholderIfAbsent=true"
+              className="absolute right-3.5 top-1/2 transform -translate-y-1/2 aspect-[1] object-contain w-6 pointer-events-none"
+              alt="Dropdown arrow"
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors disabled:opacity-50 mt-4"
+          >
+            {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
+          </button>
+        </form>
         
         <div className="text-neutral-500 text-sm mt-4">
           Limited spots available — secure your place early!
