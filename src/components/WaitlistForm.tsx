@@ -26,55 +26,132 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [error, setError] = useState<string>('');
 
   const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
+    if (error) setError(''); // Clear error when user starts typing
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form submitted:', formData);
-    
-    // Reset form
-    setFormData({ name: '', email: '', country: '', source: '' });
-    setIsSubmitting(false);
-    setShowConfirmation(true);
+    try {
+      // For Netlify Forms, we need to submit to the same page with encoded form data
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'form-name': 'waitlist',
+          name: formData.name,
+          email: formData.email,
+          country: formData.country,
+          source: formData.source,
+          timestamp: new Date().toISOString(),
+          variant: variant
+        }).toString()
+      });
+
+      if (response.ok) {
+        // Reset form and show success
+        setFormData({ name: '', email: '', country: '', source: '' });
+        setShowConfirmation(true);
+        
+        // Track successful submission (optional analytics)
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'waitlist_signup', {
+            event_category: 'engagement',
+            event_label: variant
+          });
+        }
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (err) {
+      setError('Failed to join waitlist. Please try again.');
+      console.error('Form submission error:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (variant === 'cta') {
     return (
-      <form onSubmit={handleSubmit} className={`flex flex-col items-center font-medium font-geist ${className}`}>
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-[300px] max-w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors disabled:opacity-50"
+      <div className={`flex flex-col items-center font-medium font-geist ${className}`}>
+        <form 
+          name="waitlist"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+          className="flex flex-col items-center w-full"
         >
-          {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
-        </button>
+          {/* Hidden field for Netlify */}
+          <input type="hidden" name="form-name" value="waitlist" />
+          <input type="hidden" name="variant" value="cta" />
+          
+          {/* Honeypot field for spam protection */}
+          <div style={{ display: 'none' }}>
+            <input name="bot-field" />
+          </div>
+
+          {error && (
+            <div className="text-red-400 text-sm mb-4 text-center">
+              {error}
+            </div>
+          )}
+
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-[300px] max-w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors disabled:opacity-50"
+          >
+            {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
+          </button>
+        </form>
+        
         <div className="text-neutral-500 text-sm mt-4">
           Limited spots available — secure your place early!
         </div>
+        
         <ConfirmationDialog 
           isOpen={showConfirmation} 
           onClose={() => setShowConfirmation(false)} 
         />
-      </form>
+      </div>
     );
   }
 
   return (
     <>
       <form 
+        name="waitlist"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
         className={`flex w-full max-w-[430px] flex-col items-stretch text-base text-neutral-500 font-medium rounded-xl font-geist ${className}`}
       >
+        {/* Hidden fields for Netlify */}
+        <input type="hidden" name="form-name" value="waitlist" />
+        <input type="hidden" name="variant" value="hero" />
+        
+        {/* Honeypot field for spam protection */}
+        <div style={{ display: 'none' }}>
+          <input name="bot-field" />
+        </div>
+
+        {error && (
+          <div className="text-red-400 text-sm mb-4">
+            {error}
+          </div>
+        )}
+        
         <input
           type="text"
+          name="name"
           placeholder="Your Name"
           value={formData.name}
           onChange={(e) => handleInputChange('name', e.target.value)}
@@ -84,6 +161,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
         
         <input
           type="email"
+          name="email"
           placeholder="Enter your email"
           value={formData.email}
           onChange={(e) => handleInputChange('email', e.target.value)}
@@ -93,6 +171,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
         
         <div className="relative mt-4">
           <select
+            name="country"
             value={formData.country}
             onChange={(e) => handleInputChange('country', e.target.value)}
             required
@@ -105,6 +184,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
             <option value="AU">Australia</option>
             <option value="DE">Germany</option>
             <option value="FR">France</option>
+            <option value="TR">Turkey</option>
             <option value="other">Other</option>
           </select>
           <img
@@ -116,6 +196,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
         
         <div className="relative mt-4">
           <select
+            name="source"
             value={formData.source}
             onChange={(e) => handleInputChange('source', e.target.value)}
             required
@@ -127,6 +208,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
             <option value="friend">Friend/Family</option>
             <option value="blog">Blog/Article</option>
             <option value="ad">Advertisement</option>
+            <option value="startup_house">YTU Startup House</option>
             <option value="other">Other</option>
           </select>
           <img
