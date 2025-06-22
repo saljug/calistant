@@ -39,12 +39,17 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
     setError('');
     
     try {
-      // Check if we're in development mode (show success without actual submission)
+      // Airtable configuration - replace these with your actual values
+      const AIRTABLE_BASE_ID = 'YOUR_BASE_ID_HERE';
+      const AIRTABLE_TABLE_NAME = 'Table 1';
+      const AIRTABLE_API_KEY = 'YOUR_API_KEY_HERE';
+      
+      // Check if we're in development mode
       const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       
       if (isDevelopment) {
         // In development, just simulate success
-        console.log('🚀 Development Mode: Form would submit:', {
+        console.log('🚀 Development Mode: Would submit to Airtable:', {
           name: formData.name,
           email: formData.email,
           country: formData.country,
@@ -57,12 +62,41 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
         return;
       }
 
-      // For production: Netlify will handle this automatically!
-      // We don't need fetch() - Netlify handles form submission natively
-      // This code only runs if JavaScript fails, then form submits normally
-      
-      setFormData({ name: '', email: '', country: '', source: '' });
-      setShowConfirmation(true);
+      // Submit to Airtable
+      const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_NAME}`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${AIRTABLE_API_KEY}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          records: [{
+            fields: {
+              Name: formData.name,
+              Email: formData.email,
+              Country: formData.country,
+              Source: formData.source,
+              Date: new Date().toISOString()
+            }
+          }]
+        })
+      });
+
+      if (response.ok) {
+        // Success!
+        setFormData({ name: '', email: '', country: '', source: '' });
+        setShowConfirmation(true);
+        
+        // Optional: Track with analytics
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'waitlist_signup', {
+            event_category: 'engagement',
+            event_label: variant
+          });
+        }
+      } else {
+        throw new Error('Submission failed');
+      }
       
     } catch (err) {
       setError('Failed to join waitlist. Please try again.');
@@ -76,9 +110,6 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
     return (
       <div className={`flex flex-col items-center font-medium font-geist ${className}`}>
               <form 
-        name="waitlist"
-        method="POST"
-        data-netlify="true"
         onSubmit={handleSubmit}
         className="flex flex-col items-center w-full"
       >
@@ -112,9 +143,6 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
   return (
     <>
       <form 
-        name="waitlist"
-        method="POST"
-        data-netlify="true"
         onSubmit={handleSubmit}
         className={`flex w-full max-w-[430px] flex-col items-stretch text-base text-neutral-500 font-medium rounded-xl font-geist ${className}`}
       >
