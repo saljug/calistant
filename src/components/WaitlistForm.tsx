@@ -220,11 +220,11 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
     <>
       <form 
         onSubmit={handleSubmit}
-        className={`flex w-full max-w-[430px] flex-col items-stretch text-base text-neutral-500 font-medium rounded-xl font-geist ${className}`}
+        className={`flex w-full max-w-[430px] flex-col items-stretch text-sm md:text-base text-neutral-500 font-medium rounded-xl font-geist ${className}`}
       >
 
         {error && (
-          <div className="text-red-400 text-sm mb-4">
+          <div className="text-red-400 text-xs md:text-sm mb-4">
             {error}
           </div>
         )}
@@ -236,7 +236,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
           value={formData.name}
           onChange={(e) => handleInputChange('name', e.target.value)}
           required
-          className="text-neutral-500 self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 placeholder:text-neutral-500"
+          className="text-neutral-500 self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3 md:px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 placeholder:text-neutral-500 text-sm md:text-base"
         />
         
         <input
@@ -246,7 +246,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
           value={formData.email}
           onChange={(e) => handleInputChange('email', e.target.value)}
           required
-          className="text-neutral-500 self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 mt-4 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 placeholder:text-neutral-500"
+          className="text-neutral-500 self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 mt-4 px-3 md:px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 placeholder:text-neutral-500 text-sm md:text-base"
         />
         
         <div className="relative mt-4">
@@ -255,7 +255,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
             value={formData.country}
             onChange={(e) => handleInputChange('country', e.target.value)}
             required
-            className="text-neutral-500 appearance-none self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 cursor-pointer"
+            className="text-neutral-500 appearance-none self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3 md:px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 cursor-pointer text-sm md:text-base"
           >
             <option value="">Country</option>
             <option value="US">United States</option>
@@ -269,7 +269,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
           </select>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/23bbd05afb8dc449c617176fc2e326a201cf6d5a?placeholderIfAbsent=true"
-            className="absolute right-3.5 top-1/2 transform -translate-y-1/2 aspect-[1] object-contain w-6 pointer-events-none"
+            className="absolute right-3 md:right-3.5 top-1/2 transform -translate-y-1/2 aspect-[1] object-contain w-5 md:w-6 pointer-events-none"
             alt="Dropdown arrow"
           />
         </div>
@@ -280,7 +280,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
             value={formData.source}
             onChange={(e) => handleInputChange('source', e.target.value)}
             required
-            className="text-neutral-500 appearance-none self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 cursor-pointer"
+            className="text-neutral-500 appearance-none self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden bg-neutral-900 px-3 md:px-3.5 rounded-2xl border-none outline-none focus:ring-2 focus:ring-white/20 cursor-pointer text-sm md:text-base"
           >
             <option value="">Where did you hear about us?</option>
             <option value="social">Social Media</option>
@@ -293,7 +293,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
           </select>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/23bbd05afb8dc449c617176fc2e326a201cf6d5a?placeholderIfAbsent=true"
-            className="absolute right-3.5 top-1/2 transform -translate-y-1/2 aspect-[1] object-contain w-6 pointer-events-none"
+            className="absolute right-3 md:right-3.5 top-1/2 transform -translate-y-1/2 aspect-[1] object-contain w-5 md:w-6 pointer-events-none"
             alt="Dropdown arrow"
           />
         </div>
@@ -301,12 +301,12 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
         <button
           type="submit"
           disabled={isSubmitting}
-          className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] bg-white h-[52px] w-full gap-2 overflow-hidden text-neutral-950 text-center mt-4 px-3.5 rounded-2xl hover:bg-gray-100 transition-colors disabled:opacity-50"
+          className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] bg-white h-[52px] w-full gap-2 overflow-hidden text-neutral-950 text-center mt-4 px-3 md:px-3.5 rounded-2xl hover:bg-gray-100 transition-colors disabled:opacity-50 text-sm md:text-base font-medium"
         >
           {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
         </button>
         
-        <div className="text-neutral-500 text-sm self-center mt-4">
+        <div className="text-neutral-500 text-xs md:text-sm self-center mt-4 text-center">
           Limited spots available — secure your place early!
         </div>
       </form>

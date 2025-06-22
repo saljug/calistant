@@ -45,7 +45,7 @@ export const FAQSection: React.FC = () => {
     <motion.section 
       ref={ref}
       id="faq"
-      className="z-0 flex w-full max-w-4xl mx-auto flex-col items-center mt-[200px] px-6 max-md:mt-10"
+      className="z-0 flex w-full max-w-4xl mx-auto flex-col items-center mt-24 md:mt-[200px] px-4 md:px-6"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6 }}
@@ -55,12 +55,12 @@ export const FAQSection: React.FC = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h2 className="text-white text-[32px] font-bold leading-none text-center">
+        <h2 className="text-white text-2xl md:text-[32px] font-bold leading-none text-center">
           FAQ
         </h2>
       </motion.header>
       
-      <div className="w-full max-w-2xl text-base text-neutral-500 font-medium mt-[52px] max-md:mt-10 space-y-4">
+      <div className="w-full max-w-2xl text-sm md:text-base text-neutral-500 font-medium mt-8 md:mt-[52px] space-y-4">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}

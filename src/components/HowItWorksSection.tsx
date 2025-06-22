@@ -27,7 +27,7 @@ export const HowItWorksSection: React.FC = () => {
   return (
     <motion.section 
       ref={ref}
-      className="z-0 flex w-[1372px] max-w-full flex-col items-center text-center mt-[200px] max-md:mt-10"
+      className="z-0 flex w-full max-w-7xl mx-auto flex-col items-center text-center mt-24 md:mt-[200px] px-4 md:px-6"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6 }}
@@ -37,12 +37,12 @@ export const HowItWorksSection: React.FC = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h2 className="text-white text-[32px] font-bold leading-none">
+        <h2 className="text-white text-2xl md:text-[32px] font-bold leading-none">
           How it Works
         </h2>
       </motion.header>
       
-      <div className="flex w-full items-center gap-6 justify-center flex-wrap mt-[52px] max-md:mt-10">
+      <div className="flex w-full items-center gap-4 md:gap-6 justify-center flex-col lg:flex-row mt-8 md:mt-[52px]">
         {steps.map((step, index) => (
           <React.Fragment key={index}>
             <motion.div
@@ -58,6 +58,7 @@ export const HowItWorksSection: React.FC = () => {
                 y: -5,
                 transition: { duration: 0.3 }
               }}
+              className="w-full lg:w-auto flex-1 max-w-sm"
             >
               <StepCard
                 icon={step.icon}
@@ -69,7 +70,7 @@ export const HowItWorksSection: React.FC = () => {
             {index < steps.length - 1 && (
               <motion.img
                 src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/ac0a3fd488fc89dc12068d8df6c952a05a6718a3?placeholderIfAbsent=true"
-                className="aspect-[1] object-contain w-[72px] self-stretch shrink-0 my-auto"
+                className="aspect-[1] object-contain w-12 md:w-16 lg:w-[72px] self-stretch shrink-0 my-auto rotate-90 hidden lg:block"
                 alt="Arrow pointing to next step"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
@@ -77,11 +78,6 @@ export const HowItWorksSection: React.FC = () => {
                   duration: 0.4, 
                   delay: 0.6 + index * 0.2,
                   ease: "easeOut"
-                }}
-                whileHover={{ 
-                  scale: 1.1,
-                  rotate: 5,
-                  transition: { duration: 0.2 }
                 }}
               />
             )}
