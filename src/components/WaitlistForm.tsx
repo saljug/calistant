@@ -39,21 +39,20 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
     setError('');
     
     try {
-      // Airtable configuration
-      const AIRTABLE_BASE_ID = 'appUhDYjsi8tEsmQK';
-      const AIRTABLE_TABLE_NAME = 'Table 1';
-      const AIRTABLE_API_KEY = 'patt0NkeuIB1dh8WZ.27fe542d5d163cbde6946f8bf2a6a6f2292bd43fc938988194a3c06555b07ba4';
+      // Google Sheets configuration
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyoGCWToE1wyXRhChC6OXwOUcauzy1ZbwB_3Y3Cm8WONN16JHxd26qCFNNMU_e6ObcKIg/exec';
       
       // Check if we're in development mode
       const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       
       if (isDevelopment) {
         // In development, just simulate success
-        console.log('🚀 Development Mode: Would submit to Airtable:', {
+        console.log('🚀 Development Mode: Would submit to Google Sheets:', {
           name: formData.name,
           email: formData.email,
           country: formData.country,
-          source: formData.source
+          source: formData.source,
+          timestamp: new Date().toISOString()
         });
         
         await new Promise(resolve => setTimeout(resolve, 1000));
@@ -62,66 +61,48 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
         return;
       }
 
-      // Submit to Airtable
-      console.log('Submitting to Airtable:', {
-        baseId: AIRTABLE_BASE_ID,
-        tableName: AIRTABLE_TABLE_NAME,
-        data: {
-          Name: formData.name,
-          Email: formData.email,
-          Country: formData.country,
-          Source: formData.source
-        }
+      // Create form data for Google Sheets
+      const submitData = new FormData();
+      submitData.append('name', formData.name);
+      submitData.append('email', formData.email);
+      submitData.append('country', formData.country);
+      submitData.append('source', formData.source);
+      submitData.append('timestamp', new Date().toISOString());
+
+      console.log('Submitting to Google Sheets:', {
+        name: formData.name,
+        email: formData.email,
+        country: formData.country,
+        source: formData.source,
+        timestamp: new Date().toISOString()
       });
 
-      const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`, {
+      // Submit to Google Sheets via Google Apps Script
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${AIRTABLE_API_KEY}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          records: [{
-            fields: {
-              Name: formData.name,
-              Email: formData.email,
-              Country: formData.country,
-              Source: formData.source,
-              Date: new Date().toISOString()
-            }
-          }]
-        })
+        body: submitData,
+        mode: 'no-cors' // Required for Google Apps Script
       });
 
-      console.log('Response status:', response.status);
-      console.log('Response headers:', response.headers);
-
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Airtable API error:', errorText);
-        throw new Error(`Airtable API error: ${response.status} - ${errorText}`);
-      }
-
-      if (response.ok) {
-        // Success!
-        setFormData({ name: '', email: '', country: '', source: '' });
-        setShowConfirmation(true);
-        
-        // Optional: Track with analytics
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'waitlist_signup', {
-            event_category: 'engagement',
-            event_label: variant
-          });
-        }
-      } else {
-        throw new Error('Submission failed');
+      // Note: With no-cors mode, we can't read the response
+      // But if we reach here without throwing, it likely worked
+      console.log('Google Sheets submission completed');
+      
+      // Success!
+      setFormData({ name: '', email: '', country: '', source: '' });
+      setShowConfirmation(true);
+      
+      // Optional: Track with analytics
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'waitlist_signup', {
+          event_category: 'engagement',
+          event_label: variant
+        });
       }
       
     } catch (err) {
       setError('Failed to join waitlist. Please try again.');
       console.error('Form submission error:', err);
-      console.error('Full error details:', err);
       
       // Log more details for debugging
       if (err instanceof Error) {
