@@ -39,10 +39,10 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
     setError('');
     
     try {
-      // Airtable configuration - replace these with your actual values
-      const AIRTABLE_BASE_ID = 'YOUR_BASE_ID_HERE';
+      // Airtable configuration
+      const AIRTABLE_BASE_ID = 'appUhDYjsi8tEsmQK';
       const AIRTABLE_TABLE_NAME = 'Table 1';
-      const AIRTABLE_API_KEY = 'YOUR_API_KEY_HERE';
+      const AIRTABLE_API_KEY = 'patt0NkeuIB1dh8WZ.27fe542d5d163cbde6946f8bf2a6a6f2292bd43fc938988194a3c06555b07ba4';
       
       // Check if we're in development mode
       const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
