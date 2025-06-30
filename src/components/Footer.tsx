@@ -27,15 +27,12 @@ export const Footer: React.FC = () => {
           <div className="w-full md:w-[197px] flex flex-col justify-start items-center md:items-start gap-8 md:gap-[200px]">
             {/* Logo */}
             <div className="w-full h-9 relative">
-              <div className="flex items-center justify-center md:justify-start gap-[9px]">
+              <div className="flex items-center justify-center md:justify-start">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/4536baf7148759ab3244d0b3996326f36f0edc49?placeholderIfAbsent=true"
-                  className="w-9 h-9 object-contain"
+                  src="/logo.svg"
+                  className="object-contain h-9"
                   alt="Calistant logo"
                 />
-                <div className="text-white text-3xl md:text-4xl font-semibold font-geist">
-                  calistant
-                </div>
               </div>
             </div>
             
