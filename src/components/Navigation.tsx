@@ -18,7 +18,7 @@ export const Navigation: React.FC = () => {
     <nav className="bg-[rgba(10,10,10,0.5)] backdrop-blur-md fixed z-50 flex w-full max-w-[1228px] justify-between items-center overflow-hidden h-20 px-4 md:px-[17px] py-3.5 rounded-3xl left-2/4 top-4 md:top-10 -translate-x-2/4 font-geist mx-4 md:mx-0">
       <div className="flex items-center">
         <img
-          src="/assets/logo.svg"
+          src="/logo.svg"
           className="object-contain h-9 shrink-0 my-auto"
           alt="Calistant logo"
         />
