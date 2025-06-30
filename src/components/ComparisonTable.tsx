@@ -32,8 +32,8 @@ export const ComparisonTable: React.FC = () => {
               </div>
               <div className="w-20 md:w-32 px-2 md:px-6 py-3 md:py-4 text-center border-l border-neutral-700">
                 <div className="flex flex-col items-center">
-                  <h3 className="text-[#00DA4B] text-sm md:text-lg font-semibold">Calistant</h3>
-                  <div className="w-6 md:w-8 h-1 bg-[#00DA4B] rounded-full mt-1"></div>
+                  <h3 className="text-[#F05B25] text-sm md:text-lg font-semibold">Calistant</h3>
+                  <div className="w-6 md:w-8 h-1 bg-[#F05B25] rounded-full mt-1"></div>
                 </div>
               </div>
               <div className="w-20 md:w-32 px-2 md:px-6 py-3 md:py-4 text-center border-l border-neutral-700">

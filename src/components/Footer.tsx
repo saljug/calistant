@@ -84,13 +84,19 @@ export const Footer: React.FC = () => {
                   alt="Instagram"
                 />
               </a>
-              <div className="opacity-40 cursor-not-allowed" title="Coming soon">
+              <a 
+                href="https://x.com/calistantapp" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                aria-label="Follow us on X (Twitter)"
+              >
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/1fc7280f8b5ebb04985a8ff1d8dd4fcf7d68bbc5?placeholderIfAbsent=true"
                   className="w-6 h-6 object-contain"
-                  alt="Twitter (Coming soon)"
+                  alt="X (Twitter)"
                 />
-              </div>
+              </a>
               <a 
                 href="https://www.linkedin.com/company/calistant/" 
                 target="_blank"

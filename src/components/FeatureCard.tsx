@@ -20,6 +20,9 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, descripti
           <img
             src={icon}
             className="w-10 h-10 left-[5px] top-[5px] absolute"
+            style={{
+              filter: 'hue-rotate(-124deg) saturate(2) brightness(1.4)'
+            }}
             alt={`${title} icon`}
           />
         </div>

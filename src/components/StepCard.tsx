@@ -18,6 +18,9 @@ export const StepCard: React.FC<StepCardProps> = ({ icon, title, description }) 
         <img
           src={icon}
           className="aspect-[1/1] object-contain w-16 md:w-20"
+                     style={{
+             filter: 'hue-rotate(-124deg) saturate(2) brightness(1.4)'
+           }}
           alt={`${title} icon`}
         />
         <h3 className="text-white text-xl md:text-2xl font-bold leading-none mt-4 md:mt-5 text-center">

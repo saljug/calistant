@@ -71,6 +71,9 @@ export const HowItWorksSection: React.FC = () => {
               <motion.img
                 src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/ac0a3fd488fc89dc12068d8df6c952a05a6718a3?placeholderIfAbsent=true"
                 className="aspect-[1] object-contain w-12 md:w-16 lg:w-[72px] self-stretch shrink-0 my-auto rotate-90 hidden lg:block"
+                                 style={{
+                   filter: 'hue-rotate(-124deg) saturate(2) brightness(1.4)'
+                 }}
                 alt="Arrow pointing to next step"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}

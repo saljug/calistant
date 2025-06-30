@@ -185,7 +185,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
               <option value="friend">Friend/Family</option>
               <option value="blog">Blog/Article</option>
               <option value="ad">Advertisement</option>
-              <option value="startup_house">YTU Startup House</option>
+
               <option value="other">Other</option>
             </select>
             <img
@@ -198,7 +198,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
           <button
             type="submit"
             disabled={isSubmitting}
-            className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors disabled:opacity-50 mt-4"
+            className="self-stretch shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full gap-2 overflow-hidden text-base text-neutral-950 text-center bg-[#F05B25] px-3.5 rounded-2xl hover:bg-[#d94d1f] transition-colors disabled:opacity-50 mt-4"
           >
             {isSubmitting ? 'Reserving...' : 'Reserve my spot'}
           </button>
@@ -288,7 +288,7 @@ export const WaitlistForm: React.FC<WaitlistFormProps> = ({
             <option value="friend">Friend/Family</option>
             <option value="blog">Blog/Article</option>
             <option value="ad">Advertisement</option>
-            <option value="startup_house">YTU Startup House</option>
+
             <option value="other">Other</option>
           </select>
           <img

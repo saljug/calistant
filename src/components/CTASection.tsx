@@ -38,18 +38,18 @@ export const CTASection: React.FC = () => {
         >
           <motion.button
             onClick={scrollToTop}
-            className="shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full md:w-[300px] min-w-[280px] gap-2 overflow-hidden text-sm md:text-base text-neutral-950 text-center bg-[#00DA4B] px-3.5 rounded-2xl hover:bg-[#00c043] transition-colors"
+            className="shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] h-[52px] w-full md:w-[300px] min-w-[280px] gap-2 overflow-hidden text-sm md:text-base text-neutral-950 text-center bg-[#F05B25] px-3.5 rounded-2xl hover:bg-[#d94d1f] transition-colors"
             whileHover={{ 
               scale: 1.05,
-              boxShadow: "0 0 30px rgba(0, 218, 75, 0.4)",
+              boxShadow: "0 0 30px rgba(240, 91, 37, 0.4)",
               transition: { duration: 0.3 }
             }}
             whileTap={{ scale: 0.98 }}
             animate={{
               boxShadow: [
-                "0 0 20px rgba(0, 218, 75, 0.1)",
-                "0 0 30px rgba(0, 218, 75, 0.2)",
-                "0 0 20px rgba(0, 218, 75, 0.1)"
+                "0 0 20px rgba(240, 91, 37, 0.1)",
+                "0 0 30px rgba(240, 91, 37, 0.2)",
+                "0 0 20px rgba(240, 91, 37, 0.1)"
               ]
             }}
             transition={{

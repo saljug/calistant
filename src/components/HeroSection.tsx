@@ -11,7 +11,7 @@ export const HeroSection: React.FC = () => {
       <div className="flex w-full items-center gap-6 md:gap-8 lg:gap-20 flex-col lg:flex-row">
         <div className="w-full lg:w-auto flex justify-center order-2 lg:order-1">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/facd76401aa8d54a934ede956718acbdd3128a5a?placeholderIfAbsent=true"
+            src="/assets/hero.png"
             className="aspect-[0.91] object-contain w-full max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl min-w-60"
             alt="Calistant app interface preview"
           />
@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
                 </motion.span>{" "}
                 <motion.span
                   initial={{ opacity: 0, color: "#ffffff" }}
-                  animate={{ opacity: 1, color: "#00DA4B" }}
+                  animate={{ opacity: 1, color: "#F05B25" }}
                   transition={{ duration: 0.6, delay: 0.8 }}
                 >
                   Nutrition Assistant

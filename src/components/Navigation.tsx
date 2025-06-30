@@ -16,15 +16,12 @@ export const Navigation: React.FC = () => {
 
   return (
     <nav className="bg-[rgba(10,10,10,0.5)] backdrop-blur-md fixed z-50 flex w-full max-w-[1228px] justify-between items-center overflow-hidden h-20 px-4 md:px-[17px] py-3.5 rounded-3xl left-2/4 top-4 md:top-10 -translate-x-2/4 font-geist mx-4 md:mx-0">
-      <div className="flex items-center gap-[9px] text-2xl md:text-4xl text-white font-semibold whitespace-nowrap">
+      <div className="flex items-center">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/4536baf7148759ab3244d0b3996326f36f0edc49?placeholderIfAbsent=true"
-          className="aspect-[1] object-contain w-7 md:w-9 self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]"
+          src="/assets/logo.svg"
+          className="object-contain h-9 shrink-0 my-auto"
           alt="Calistant logo"
         />
-        <div className="self-stretch my-auto">
-          calistant
-        </div>
       </div>
       
       <button
