@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
                 {t('footer.ourTeam')}
               </div>
               <a 
-                href="/privacy-policy" 
+                href="/privacy" 
                 className="text-neutral-500 text-base font-medium font-geist text-center md:text-right hover:text-neutral-300 transition-colors"
               >
                 {t('footer.privacyPolicy')}
