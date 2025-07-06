@@ -31,7 +31,7 @@ export const Navigation: React.FC = () => {
       </div>
 
       {/* Right side - App Store buttons - hidden on mobile */}
-      <div className="hidden md:flex items-center gap-1.5 pr-4">
+      <div className="hidden md:flex items-center gap-1.5 pr-6">
         {/* App Store Button */}
         <motion.button 
           className="w-[140px] h-[42px] bg-transparent flex items-center justify-center"
@@ -61,9 +61,10 @@ export const Navigation: React.FC = () => {
         </motion.button>
       </div>
 
-      {/* Mobile - Empty div to maintain layout balance */}
-      <div className="md:hidden pr-4">
-        {/* Empty div to balance the layout on mobile */}
+      {/* Mobile - Empty div to maintain layout balance with matching padding */}
+      <div className="md:hidden flex items-center pr-6">
+        {/* Empty div with matching padding to balance the layout on mobile */}
+        <div className="w-4"></div>
       </div>
     </nav>
   );
