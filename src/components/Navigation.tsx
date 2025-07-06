@@ -30,8 +30,8 @@ export const Navigation: React.FC = () => {
         </Link>
       </div>
 
-      {/* Right side - App Store buttons */}
-      <div className="flex items-center gap-1.5 pr-4">
+      {/* Right side - App Store buttons - hidden on mobile */}
+      <div className="hidden md:flex items-center gap-1.5 pr-4">
         {/* App Store Button */}
         <motion.button 
           className="w-[140px] h-[42px] bg-transparent flex items-center justify-center"
@@ -59,6 +59,11 @@ export const Navigation: React.FC = () => {
             className="w-full h-full object-contain"
           />
         </motion.button>
+      </div>
+
+      {/* Mobile - Empty div to maintain layout balance */}
+      <div className="md:hidden pr-4">
+        {/* Empty div to balance the layout on mobile */}
       </div>
     </nav>
   );
