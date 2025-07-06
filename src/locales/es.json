@@ -1,0 +1,221 @@
+{
+  "navigation": {
+    "logoAlt": "Logo de Calistant",
+    "appStoreAlt": "Descargar en App Store",
+    "googlePlayAlt": "Obtener en Google Play"
+  },
+  "hero": {
+    "title1": "Rastrea Mejor.",
+    "title2": "Come Más Inteligente.",
+    "subtitle": "Registra comidas por foto, voz o texto.",
+    "subtitle2": "Rastrea macros, micros y mantente consistente con guía de IA.",
+    "backedBy": "Respaldado por",
+    "heroImageAlt": "Mano sosteniendo teléfono con interfaz de la app Calistant"
+  },
+  "features": {
+    "title": "Características Clave",
+    "hybridLogging": {
+      "title": "Registro Híbrido",
+      "description": "Foto • código de barras • texto • voz—todo en un toque."
+    },
+    "deepAnalytics": {
+      "title": "Análisis Profundo",
+      "description": "Tendencias de 7/30/90 días más seguimiento de vitaminas y fibra."
+    },
+    "aiChat": {
+      "title": "Asistente de Chat IA",
+      "description": "Preguntas y respuestas bajo demanda y asignar tareas"
+    },
+    "gamification": {
+      "title": "Gamificación",
+      "description": "Rachas, insignias y tablas de clasificación globales impulsan el hábito."
+    },
+    "smartShopping": {
+      "title": "Compras Inteligentes",
+      "description": "Recetas de nevera a mesa y listas de compras auto-generadas."
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "step1": {
+      "title": "Registra Tu Comida",
+      "description": "Toma una foto, escanea un código de barras o usa entrada de voz/texto."
+    },
+    "step2": {
+      "title": "IA Analiza",
+      "description": "Obtén desglose nutricional instantáneo con detalles macro y micro."
+    },
+    "step3": {
+      "title": "Rastrea y Mejora",
+      "description": "Monitorea tendencias, obtén insights personalizados y construye mejores hábitos."
+    }
+  },
+  "comparison": {
+    "title": "Por Qué Somos Mejores",
+    "subtitle": "Ve cómo Calistant supera a la competencia",
+    "feature": "Características",
+    "calistant": "Calistant",
+    "others": "Otros",
+    "hybridLogging": "Registro Foto, Código de Barras, Texto, Voz",
+    "aiGuidance": "Asistente de Chat IA",
+    "gamification": "Gamificación (Rachas y Insignias)",
+    "smartShopping": "Compras Inteligentes",
+    "deepAnalytics": "Análisis Profundo 7/30/90 Días",
+    "privacyFocused": "Enfocado en Privacidad",
+    "yes": "✓",
+    "no": "✗",
+    "limited": "Limitado",
+    "footerNote": "✨ Únete a otros que ya han elegido el asistente nutricional más inteligente"
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": {
+      "free": {
+        "question": "¿Es Calistant gratuito?",
+        "answer": "Sí—nuestro nivel gratuito permanece gratuito para siempre. Actualizar a Pro desbloquea registros ilimitados, análisis profundo, planes de comidas IA y más."
+      },
+      "accuracy": {
+        "question": "¿Qué tan precisas son las estimaciones nutricionales?",
+        "answer": "Nuestra IA está validada en laboratorio dentro de ±10% en comidas comunes y usa una base de datos verificada por nutricionistas con verificaciones puntuales manuales—así que aunque pueden ocurrir discrepancias menores, puedes confiar en tus números. El re-entrenamiento continuo de IA con retroalimentación de usuarios del mundo real asegura que tus números permanezcan precisos y confiables."
+      },
+      "cancel": {
+        "question": "¿Puedo cancelar mi suscripción Pro en cualquier momento?",
+        "answer": "Absolutamente. No hay compromiso a largo plazo—puedes actualizar, degradar o cancelar en cualquier momento."
+      },
+      "platforms": {
+        "question": "¿Qué plataformas e integraciones están soportadas?",
+        "answer": "Calistant funciona en iOS y Android. También sincronizamos con Apple Health, Google Fit y wearables populares listos para usar (más integraciones próximamente)."
+      },
+      "privacy": {
+        "question": "¿Cómo están protegidos mis datos personales?",
+        "answer": "Todos los datos están encriptados en tránsito y en reposo; nunca compartimos sin tu consentimiento."
+      },
+      "languages": {
+        "question": "¿Calistant soportará múltiples idiomas?",
+        "answer": "Inglés en el lanzamiento; Español, Francés, Turco y más próximamente."
+      }
+    }
+  },
+  "footer": {
+    "about": "Acerca de",
+    "ourTeam": "Nuestro Equipo",
+    "privacyPolicy": "Política de Privacidad",
+    "terms": "Términos",
+    "backedBy": "Respaldado por",
+    "copyright": "© 2025 Calistant",
+    "socialAlt": {
+      "instagram": "Síguenos en Instagram",
+      "twitter": "Síguenos en X (Twitter)",
+      "linkedin": "Síguenos en LinkedIn"
+    }
+  },
+  "pages": {
+    "privacyPolicy": {
+      "title": "Política de Privacidad",
+      "lastRevised": "Última revisión: 6 de junio de 2025",
+      "effective": "Efectivo: 6 de junio de 2025",
+      "content": {
+        "intro": {
+          "title": "Política de Privacidad de Calistant",
+          "p1": "¡Hola! En Calistant, creemos que entender tus comidas no debería sentirse como resolver un problema de matemáticas. Estamos aquí para ayudarte a desarrollar hábitos más saludables haciendo que el seguimiento de comidas sea fácil, inteligente e incluso un poco divertido. No somos un servicio médico o dietético. Como este es un viaje personal, recopilamos información para hacer tu experiencia lo más útil y personalizada posible.",
+          "p2": "Esta Política de Privacidad describe cómo Calistant maneja tu información personal durante el uso de la aplicación. Explica qué tipo de datos se recopilan, cómo se usan y cómo se protege tu privacidad. También encontrarás información sobre tus derechos y las opciones que tienes respecto a tus datos.",
+          "p3": "Calistant está diseñado para personas mayores de 13 años. Si eres menor de 13 años, por favor no crees una cuenta ni uses Calistant."
+        },
+        "medicalDisclaimer": {
+          "title": "Calistant no es una aplicación de consejos médicos",
+          "items": {
+            "0": "Calistant no es un proveedor de atención médica con licencia o un sustituto del consejo médico.",
+            "1": "Todas las sugerencias e insights son generados por IA y deben considerarse solo informativos.",
+            "2": "Los usuarios deben consultar a un médico o dietista calificado antes de hacer cambios dietéticos significativos.",
+            "3": "Calistant no genera planes de dieta personalizados o recomendaciones libres de alérgenos.",
+            "4": "Si tienes alguna condición médica, alergia alimentaria o restricción dietética, consulta a un profesional."
+          },
+          "note": "Esta aplicación no es un generador de dietas. Es una herramienta de apoyo para la planificación de alimentos y la conciencia. Las decisiones basadas en los resultados de la aplicación son responsabilidad del usuario."
+        },
+        "aiLimitations": {
+          "title": "Limitaciones de la IA",
+          "items": {
+            "0": "La aplicación usa algoritmos de IA que pueden producir información inexacta, incompleta o engañosa.",
+            "1": "La IA puede clasificar mal los alimentos o no detectar alérgenos.",
+            "2": "No podemos garantizar la precisión nutricional de cada entrada de alimento, código de barras o contenido generado por el usuario."
+          }
+        },
+        "dataCollection": {
+          "title": "Información Personal que Recopilamos",
+          "intro": "Podemos recopilar tu información personal a través de tres fuentes principales: directamente de ti, automáticamente mientras interactúas con nuestros Servicios, y de terceros autorizados.",
+          "directCollection": {
+            "title": "Información Personal que Recopilamos Directamente de Ti",
+            "account": {
+              "title": "Información de Cuenta y Perfil",
+              "content": "Cuando te registras en Calistant, puedes proporcionar detalles como tu nombre, dirección de correo electrónico, ubicación general (como país), imagen de perfil (si eliges subir una), nombre de usuario, contraseña, fecha de nacimiento y género."
+            },
+            "foodData": {
+              "title": "Datos de Diario de Alimentos y Actividad",
+              "intro": "Calistant incluye funciones que te permiten registrar comidas, rastrear tu actividad y monitorear tus objetivos de salud. Al usar estas funciones, puedes enviar voluntariamente información como:",
+              "items": {
+                "0": "Hábitos alimentarios y nutricionales",
+                "1": "Alimentos, bebidas y medicamentos que consumes (incluyendo los registrados mediante entrada de voz, texto o escaneo de código de barras)",
+                "2": "Ingesta de calorías y distribución de nutrientes",
+                "3": "Preferencias o restricciones dietéticas",
+                "4": "Actividad física, rutinas de ejercicio y objetivos relacionados",
+                "5": "Hábitos de estilo de vida como datos de sueño",
+                "6": "Métricas corporales como altura, peso e IMC",
+                "7": "Información relacionada con condiciones físicas o de salud",
+                "8": "Fotos de progreso opcionales",
+                "9": "Notas o reflexiones sobre tus hábitos, condición física o estado mental"
+              },
+              "note": "Algunos de estos datos pueden considerarse información personal sensible si indican directa o indirectamente una condición médica o de salud."
+            }
+          }
+        },
+        "automaticCollection": {
+          "title": "Información Personal Recopilada Automáticamente",
+          "intro": "Calistant puede recopilar automáticamente cierta información relacionada con tu dispositivo y cómo interactúas con los Servicios."
+        },
+        "dataUsage": {
+          "title": "Cómo Usamos Tu Información Personal",
+          "intro": "Calistant puede usar la información personal que recopilamos para los propósitos descritos a continuación."
+        },
+        "dataSharing": {
+          "title": "Cómo Compartimos la Información Personal",
+          "intro": "Calistant puede compartir datos personales con categorías específicas de terceros, siempre en alineación con los propósitos descritos en esta Política de Privacidad."
+        },
+        "dataRetention": {
+          "title": "Cómo Calistant Retiene Tu Información",
+          "content": "Calistant retiene tu información personal durante el tiempo necesario para apoyar los propósitos descritos en esta Política de Privacidad."
+        },
+        "dataSecurity": {
+          "title": "Cómo Calistant Protege Tu Información",
+          "content": "Calistant implementa una combinación de medidas técnicas, organizacionales y administrativas para ayudar a proteger tu información personal."
+        },
+        "privacyRights": {
+          "title": "Tus Derechos de Privacidad",
+          "intro": "Dependiendo de tu lugar de residencia, puedes tener derechos legales específicos sobre cómo se recopila, usa, almacena y comparte tu información personal.",
+          "contact": "Si tienes preguntas, inquietudes o solicitudes relacionadas con esta Política de Privacidad o las prácticas de datos de Calistant, puedes contactarnos en: privacy@calistant.com"
+        }
+      }
+    },
+    "terms": {
+      "title": "Términos de Servicio",
+      "comingSoon": "El contenido de Términos de Servicio próximamente."
+    },
+    "notFound": {
+      "title": "Página No Encontrada",
+      "message": "La página que buscas no existe.",
+      "backHome": "Volver al Inicio"
+    }
+  },
+  "cta": {
+    "title": "¿Listo Para Transformar Tu Viaje Nutricional?",
+    "subtitle": "Únete a miles que ya han comenzado a comer más inteligentemente con Calistant.",
+    "downloadNow": "Descargar Ahora"
+  },
+  "waitlist": {
+    "title": "Unirse a la Lista de Espera",
+    "subtitle": "Sé de los primeros en experimentar el futuro del seguimiento nutricional.",
+    "emailPlaceholder": "Ingresa tu dirección de correo electrónico",
+    "joinButton": "Unirse a Lista de Espera",
+    "success": "¡Gracias por unirte! Te contactaremos pronto.",
+    "error": "Algo salió mal. Por favor intenta de nuevo."
+  }
+} 

@@ -1,38 +1,42 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FeatureCard } from './FeatureCard';
 
-const features = [
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/65bef691edd80a23bce20b55b4d77084dab96211?placeholderIfAbsent=true",
-    title: "Hybrid Logging",
-    description: "Photo • barcode • text • voice—all in one tap."
-  },
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/0487895667992c943216b0b02d86cd7fa07be1d5?placeholderIfAbsent=true",
-    title: "Deep Analytics",
-    description: "7/30/90-day trends plus vitamin & fiber tracking."
-  },
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/da96031fe1d0b06e95343f64f939bdd703299d9b?placeholderIfAbsent=true",
-    title: "AI Chat Assistant",
-    description: "Get on-demand Q&A and give tasks"
-  },
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/af7007f5b618f0b620a62508c0081fe431e2776c?placeholderIfAbsent=true",
-    title: "Gamification",
-    description: "Streaks, badges & global leaderboards drive habit."
-  },
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/d99667addb191dcb9bbd8f88010e5410ec91ef9d?placeholderIfAbsent=true",
-    title: "Smart Shopping",
-    description: "Fridge-to-table recipes & auto-built grocery lists."
-  }
-];
+
 
 export const FeaturesSection: React.FC = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const features = [
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/65bef691edd80a23bce20b55b4d77084dab96211?placeholderIfAbsent=true",
+      title: t('features.hybridLogging.title'),
+      description: t('features.hybridLogging.description')
+    },
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/0487895667992c943216b0b02d86cd7fa07be1d5?placeholderIfAbsent=true",
+      title: t('features.deepAnalytics.title'),
+      description: t('features.deepAnalytics.description')
+    },
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/da96031fe1d0b06e95343f64f939bdd703299d9b?placeholderIfAbsent=true",
+      title: t('features.aiChat.title'),
+      description: t('features.aiChat.description')
+    },
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/af7007f5b618f0b620a62508c0081fe431e2776c?placeholderIfAbsent=true",
+      title: t('features.gamification.title'),
+      description: t('features.gamification.description')
+    },
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/d99667addb191dcb9bbd8f88010e5410ec91ef9d?placeholderIfAbsent=true",
+      title: t('features.smartShopping.title'),
+      description: t('features.smartShopping.description')
+    }
+  ];
 
   return (
     <motion.section 
@@ -49,7 +53,7 @@ export const FeaturesSection: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <h2 className="text-white text-2xl md:text-[32px] font-bold leading-none">
-          Key Features
+          {t('features.title')}
         </h2>
       </motion.header>
       

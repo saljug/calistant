@@ -1,0 +1,221 @@
+{
+  "navigation": {
+    "logoAlt": "Calistant loqosu",
+    "appStoreAlt": "App Store-dan yüklə",
+    "googlePlayAlt": "Google Play-dən al"
+  },
+  "hero": {
+    "title1": "Daha Yaxşı İzlə.",
+    "title2": "Daha Ağıllı Ye.",
+    "subtitle": "Yeməkləri şəkil, səs və ya mətn ilə qeyd et.",
+    "subtitle2": "Makroları, mikroları izlə və AI rəhbərliyi ilə tutarlı qal.",
+    "backedBy": "Dəstəkləyən",
+    "heroImageAlt": "Calistant tətbiqi interfeysi olan telefonu tutan əl"
+  },
+  "features": {
+    "title": "Əsas Xüsusiyyətlər",
+    "hybridLogging": {
+      "title": "Hibrid Qeydiyyat",
+      "description": "Şəkil • barkod • mətn • səs—hamısı bir toxunuşla."
+    },
+    "deepAnalytics": {
+      "title": "Dərin Analitika",
+      "description": "7/30/90 günlük tendensiyalar artı vitamin və lif izləmə."
+    },
+    "aiChat": {
+      "title": "AI Söhbət Köməkçisi",
+      "description": "Tələb üzrə sual-cavab və tapşırıq vermə"
+    },
+    "gamification": {
+      "title": "Oyunlaşdırma",
+      "description": "Ardıcıllıqlar, nişanlar və qlobal liderlik cədvəlləri vərdiş yaradır."
+    },
+    "smartShopping": {
+      "title": "Ağıllı Alış-veriş",
+      "description": "Soyuducudan masaya reseptlər və avtomatik yaradılan alış-veriş siyahıları."
+    }
+  },
+  "howItWorks": {
+    "title": "Necə İşləyir",
+    "step1": {
+      "title": "Yeməyini Qeyd Et",
+      "description": "Şəkil çək, barkod skan et və ya səs/mətn girişi istifadə et."
+    },
+    "step2": {
+      "title": "AI Təhlil Edir",
+      "description": "Makro və mikro təfərrüatları ilə ani qidalanma təhlili al."
+    },
+    "step3": {
+      "title": "İzlə və İnkişaf Etdir",
+      "description": "Tendensiyaları izlə, fərdiləşdirilmiş anlayışlar əldə et və daha yaxşı vərdişlər yarat."
+    }
+  },
+  "comparison": {
+    "title": "Niyə Biz Daha Yaxşıyıq",
+    "subtitle": "Calistant-ın rəqabəti necə üstələdiyini görün",
+    "feature": "Xüsusiyyətlər",
+    "calistant": "Calistant",
+    "others": "Digərləri",
+    "hybridLogging": "Şəkil, Barkod, Mətn, Səs Qeydi",
+    "aiGuidance": "AI Söhbət Köməkçisi",
+    "gamification": "Oyunlaşdırma (Ardıcıllıqlar və Nişanlar)",
+    "smartShopping": "Ağıllı Alış-veriş",
+    "deepAnalytics": "7/30/90 Günlük Dərin Analitika",
+    "privacyFocused": "Məxfilik Yönümlü",
+    "yes": "✓",
+    "no": "✗",
+    "limited": "Məhdud",
+    "footerNote": "✨ Artıq daha ağıllı qidalanma köməkçisini seçən digərlərinə qoşulun"
+  },
+  "faq": {
+    "title": "Tez-tez verilən suallar",
+    "questions": {
+      "free": {
+        "question": "Calistant pulsuzdur?",
+        "answer": "Bəli—pulsuz səviyyəmiz həmişəlik pulsuz qalır. Pro-ya yüksəltmə limitsiz qeydlər, dərin analitika, AI yemək planları və daha çoxunu açır."
+      },
+      "accuracy": {
+        "question": "Qidalanma qiymətləndirmələri nə qədər dəqiqdir?",
+        "answer": "AI-mız adi yeməklərdə ±10% dəqiqliklə laboratoriya təsdiqlənib və əl ilə nöqtə yoxlamaları olan qidalanma mütəxəssisi təsdiqlənmiş verilənlər bazasından istifadə edir—kiçik fərqlər ola bilsə də, rəqəmlərinizə güvənə bilərsiniz."
+      },
+      "cancel": {
+        "question": "Pro abunəliyimi istənilən vaxt ləğv edə bilərəmmi?",
+        "answer": "Mütləq. Uzunmüddətli öhdəlik yoxdur—istənilən vaxt yüksəldə, endirə və ya ləğv edə bilərsiniz."
+      },
+      "platforms": {
+        "question": "Hansı platformalar və inteqrasiyalar dəstəklənir?",
+        "answer": "Calistant iOS və Android-də işləyir. Həmçinin Apple Health, Google Fit və məşhur geyilə bilən cihazlarla dərhal sinxronlaşırıq."
+      },
+      "privacy": {
+        "question": "Şəxsi məlumatlarım necə qorunur?",
+        "answer": "Bütün məlumatlar ötürülmə və saxlanma zamanı şifrələnir; heç vaxt razılığınız olmadan paylaşmırıq."
+      },
+      "languages": {
+        "question": "Calistant çoxsaylı dilləri dəstəkləyəcəkmi?",
+        "answer": "Başlanğıcda ingilis dili; ispan, fransız, türk və daha çoxu qısa müddətdə gələcək."
+      }
+    }
+  },
+  "footer": {
+    "about": "Haqqında",
+    "ourTeam": "Komandamız",
+    "privacyPolicy": "Məxfilik Siyasəti",
+    "terms": "Şərtlər",
+    "backedBy": "Dəstəkləyən",
+    "copyright": "© 2025 Calistant",
+    "socialAlt": {
+      "instagram": "Instagram-da izləyin",
+      "twitter": "X-də (Twitter) izləyin",
+      "linkedin": "LinkedIn-də izləyin"
+    }
+  },
+  "pages": {
+    "privacyPolicy": {
+      "title": "Məxfilik Siyasəti",
+      "lastRevised": "Son dəyişiklik: 6 iyun 2025",
+      "effective": "Qüvvədə: 6 iyun 2025",
+      "content": {
+        "intro": {
+          "title": "Calistant Məxfilik Siyasəti",
+          "p1": "Salam! Calistant-da biz inanırıq ki, yeməklərinizi anlamaq riyaziyyat problemi həll etmək kimi hiss etməməlidir. Yemək izləməni asan, ağıllı və hətta bir az əyləncəli etməklə daha sağlam vərdişlər inkişaf etdirməyinizə kömək etmək üçün buradayıq. Biz tibbi və ya pəhriz xidməti deyilik. Bu şəxsi səyahət olduğuna görə, təcrübənizi mümkün qədər faydalı və fərdiləşdirilmiş etmək üçün bəzi məlumatlar toplayırıq.",
+          "p2": "Bu Məxfilik Siyasəti tətbiqin istifadəsi zamanı Calistant-ın şəxsi məlumatlarınızı necə idarə etdiyini təsvir edir. Hansı növ məlumatların toplandığını, necə istifadə edildiyini və məxfiliyinizin necə qorunduğunu izah edir.",
+          "p3": "Calistant 13 yaşdan yuxarı insanlar üçün nəzərdə tutulub. 13 yaşdan kiçiksinizsə, zəhmət olmasa hesab yaratmayın və ya Calistant istifadə etməyin."
+        },
+        "medicalDisclaimer": {
+          "title": "Calistant tibbi məsləhət tətbiqi deyil",
+          "items": {
+            "0": "Calistant lisenziyalı səhiyyə təminatçısı deyil və ya tibbi məsləhətin əvəzi deyil.",
+            "1": "Bütün təkliflər və fikirlər AI tərəfindən yaradılır və yalnız məlumat kimi nəzərdən keçirilməlidir.",
+            "2": "İstifadəçilər əhəmiyyətli pəhriz dəyişiklikləri etməzdən əvvəl ixtisaslı həkim və ya dietetiklə məsləhətləşməlidirlər.",
+            "3": "Calistant fərdiləşdirilmiş pəhriz planları və ya allergensiz tövsiyələr yaratmır.",
+            "4": "Hər hansı tibbi vəziyyətiniz, qida allergiyası və ya pəhriz məhdudiyyətiniz varsa, zəhmət olmasa peşəkarla məsləhətləşin."
+          },
+          "note": "Bu tətbiq pəhriz generatoru deyil. Bu, qida planlaması və şüur üçün dəstək vasitəsidir. Tətbiq nəticələrinə əsaslanan qərarlar istifadəçinin məsuliyyətidir."
+        },
+        "aiLimitations": {
+          "title": "AI Məhdudiyyətləri",
+          "items": {
+            "0": "Tətbiq yanlış, natamam və ya aldadıcı məlumat yarada bilən AI alqoritmlərindən istifadə edir.",
+            "1": "AI qidaları səhv təsnif edə bilər və ya allergenləri aşkar edə bilməz.",
+            "2": "Hər qida girişi, barkod və ya istifadəçi tərəfindən yaradılan məzmunun qidalanma dəqiqliyini təmin edə bilmərik."
+          }
+        },
+        "dataCollection": {
+          "title": "Topladığımız Şəxsi Məlumatlar",
+          "intro": "Şəxsi məlumatlarınızı üç əsas mənbədən toplaya bilərik: birbaşa sizdən, Xidmətlərimizlə qarşılıqlı təsir zamanı avtomatik olaraq və səlahiyyətli üçüncü tərəflərdən.",
+          "directCollection": {
+            "title": "Birbaşa Sizdən Topladığımız Şəxsi Məlumatlar",
+            "account": {
+              "title": "Hesab və Profil Məlumatları",
+              "content": "Calistant-a qeydiyyatdan keçərkən adınız, e-poçt ünvanınız, ümumi məkan (ölkə kimi), profil şəkli (yükləməyi seçsəniz), istifadəçi adı, şifrə, doğum tarixi və cinsi kimi təfərrüatları təqdim edə bilərsiniz."
+            },
+            "foodData": {
+              "title": "Qida və Fəaliyyət Gündəliyi Məlumatları",
+              "intro": "Calistant yeməkləri qeyd etməyə, fəaliyyətinizi izləməyə və sağlamlıq hədəflərinizi nəzarət etməyə imkan verən xüsusiyyətlər ehtiva edir. Bu xüsusiyyətlərdən istifadə edərkən aşağıdakı kimi məlumatları könüllü olaraq göndərə bilərsiniz:",
+              "items": {
+                "0": "Qidalanma və yemək vərdişləri",
+                "1": "İstehlak etdiyiniz qidalar, içkilər və dərmanlar (səs girişi, mətn və ya barkod skanlaması ilə qeyd edilənlər daxil)",
+                "2": "Kalori qəbulu və qida maddələrinin paylanması",
+                "3": "Pəhriz üstünlükləri və ya məhdudiyyətləri",
+                "4": "Fitness fəaliyyəti, məşq rutinləri və əlaqəli hədəflər",
+                "5": "Yuxu məlumatları kimi həyat tərzi vərdişləri",
+                "6": "Boy, çəki və BMI kimi bədənlə əlaqəli ölçülər",
+                "7": "Fiziki və ya sağlamlıq vəziyyətləri ilə bağlı məlumatlar",
+                "8": "İxtiyari irəliləyiş fotoları",
+                "9": "Vərdişləriniz, fiziki vəziyyətiniz və ya zehni vəziyyətiniz haqqında qeydlər və ya düşüncələr"
+              },
+              "note": "Bu məlumatların bəziləri, birbaşa və ya dolayı yolla tibbi və ya sağlamlıq vəziyyətini göstərərsə, həssas şəxsi məlumat hesab edilə bilər."
+            }
+          }
+        },
+        "automaticCollection": {
+          "title": "Avtomatik Toplanan Şəxsi Məlumatlar",
+          "intro": "Calistant cihazınızla bağlı müəyyən məlumatları və Xidmətlərlə necə qarşılıqlı təsir göstərdiyinizi avtomatik olaraq toplaya bilər."
+        },
+        "dataUsage": {
+          "title": "Şəxsi Məlumatlarınızı Necə İstifadə Edirik",
+          "intro": "Calistant topladığımız şəxsi məlumatları aşağıda təsvir edilən məqsədlər üçün istifadə edə bilər."
+        },
+        "dataSharing": {
+          "title": "Şəxsi Məlumatları Necə Bölüşürük",
+          "intro": "Calistant şəxsi məlumatları müəyyən üçüncü tərəf kateqoriyaları ilə, həmişə bu Məxfilik Siyasətində təsvir edilən məqsədlər və tətbiq olunan hüquqi tələblərlə uyğun olaraq bölüşə bilər."
+        },
+        "dataRetention": {
+          "title": "Calistant Məlumatlarınızı Necə Saxlayır",
+          "content": "Calistant şəxsi məlumatlarınızı bu Məxfilik Siyasətində təsvir edilən məqsədləri dəstəkləmək üçün lazım olduqca saxlayır."
+        },
+        "dataSecurity": {
+          "title": "Calistant Məlumatlarınızı Necə Qoruyur",
+          "content": "Calistant şəxsi məlumatlarınızı qorumaq üçün texniki, təşkilati və inzibati tədbirlərin kombinasiyasını həyata keçirir."
+        },
+        "privacyRights": {
+          "title": "Məxfilik Hüquqlarınız",
+          "intro": "Yaşadığınız yerə görə, şəxsi məlumatlarınızın necə toplandığı, istifadə edildiyi, saxlandığı və paylaşıldığına dair xüsusi hüquqi hüquqlarınız ola bilər.",
+          "contact": "Bu Məxfilik Siyasəti və ya Calistant-ın məlumat təcrübələri ilə bağlı hər hansı sualınız, narahatlığınız və ya sorğunuz varsa, bizimlə əlaqə saxlaya bilərsiniz: privacy@calistant.com"
+        }
+      }
+    },
+    "terms": {
+      "title": "Xidmət Şərtləri",
+      "comingSoon": "Xidmət Şərtləri məzmunu tezliklə gələcək."
+    },
+    "notFound": {
+      "title": "Səhifə Tapılmadı",
+      "message": "Axtardığınız səhifə mövcud deyil.",
+      "backHome": "Ana Səhifəyə Qayıt"
+    }
+  },
+  "cta": {
+    "title": "Qidalanma Səfərinizi Dəyişdirməyə Hazırsınız?",
+    "subtitle": "Calistant ilə artıq daha ağıllı yemeye başlamış minlərlə insana qoşulun.",
+    "downloadNow": "İndi Yüklə"
+  },
+  "waitlist": {
+    "title": "Gözləmə Siyahısına Qoşulun",
+    "subtitle": "Qidalanma izləməsinin gələcəyini ilk təcrübə edənlər arasında olun.",
+    "emailPlaceholder": "E-poçt ünvanınızı daxil edin",
+    "joinButton": "Gözləmə Siyahısına Qoşul",
+    "success": "Qoşulduğunuz üçün təşəkkür edirik! Tezliklə sizinlə əlaqə saxlayacağıq.",
+    "error": "Nəsə səhv getdi. Yenidən cəhd edin."
+  }
+} 

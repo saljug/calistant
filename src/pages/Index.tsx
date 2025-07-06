@@ -5,7 +5,6 @@ import { FeaturesSection } from '../components/FeaturesSection';
 import { HowItWorksSection } from '../components/HowItWorksSection';
 import { ComparisonTable } from '../components/ComparisonTable';
 import { FAQSection } from '../components/FAQSection';
-import { CTASection } from '../components/CTASection';
 import { Footer } from '../components/Footer';
 
 const Index: React.FC = () => {
@@ -19,7 +18,6 @@ const Index: React.FC = () => {
         <HowItWorksSection />
         <ComparisonTable />
         <FAQSection />
-        <CTASection />
       </main>
       
       <Footer />

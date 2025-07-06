@@ -22,6 +22,10 @@ export default {
 				'geist': ['Geist', 'system-ui', 'sans-serif'],
 			},
 			colors: {
+				brand: {
+					orange: '#F05B25',
+					'orange-hover': '#d94d1f'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

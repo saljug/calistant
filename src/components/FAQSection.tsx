@@ -1,45 +1,41 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FAQItem } from './FAQItem';
 
-const faqs = [
-  {
-    question: "What do I get by joining the waitlist?",
-    answer: "By signing up now, you'll receive exclusive early access to Calistant, first dibs on beta-only features, priority support, and special launch pricing when we go live."
-  },
-  {
-    question: "When will Calistant launch?",
-    answer: "We're targeting a private beta this summer, followed by a public release shortly thereafter. Waitlisters go first!"
-  },
-  {
-    question: "Is Calistant free?",
-    answer: "Yes—our Free tier remains free forever. Upgrading to Pro unlocks unlimited logs, deep analytics, AI meal plans, and more."
-  },
-  {
-    question: "How accurate are the nutritional estimates?",
-    answer: "Our AI is lab-validated to within ±10% on common meals and uses a nutritionist-verified database with manual spot-checks—so while minor discrepancies can occur, you can trust your numbers. Continuous AI retraining on real-world user feedback ensures your numbers stay precise and trustworthy."
-  },
-  {
-    question: "Can I cancel my Pro subscription at any time?",
-    answer: "Absolutely. There's no long-term commitment—you can upgrade, downgrade or cancel at any moment."
-  },
-  {
-    question: "Which platforms and integrations are supported?",
-    answer: "Calistant runs on iOS & Android. We also sync with Apple Health, Google Fit and popular wearables out of the box (more integrations coming soon)."
-  },
-  {
-    question: "How is my personal data protected?",
-    answer: "All data is encrypted in transit and at rest; we never share without your consent."
-  },
-  {
-    question: "Will Calistant support multiple languages?",
-    answer: "English at launch; Spanish, French, Turkish and more coming shortly after."
-  }
-];
+
 
 export const FAQSection: React.FC = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+
+  const faqs = [
+    {
+      question: t('faq.questions.free.question'),
+      answer: t('faq.questions.free.answer')
+    },
+    {
+      question: t('faq.questions.accuracy.question'),
+      answer: t('faq.questions.accuracy.answer')
+    },
+    {
+      question: t('faq.questions.cancel.question'),
+      answer: t('faq.questions.cancel.answer')
+    },
+    {
+      question: t('faq.questions.platforms.question'),
+      answer: t('faq.questions.platforms.answer')
+    },
+    {
+      question: t('faq.questions.privacy.question'),
+      answer: t('faq.questions.privacy.answer')
+    },
+    {
+      question: t('faq.questions.languages.question'),
+      answer: t('faq.questions.languages.answer')
+    }
+  ];
 
   return (
     <motion.section 
@@ -56,7 +52,7 @@ export const FAQSection: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <h2 className="text-white text-2xl md:text-[32px] font-bold leading-none text-center">
-          FAQ
+          {t('faq.title')}
         </h2>
       </motion.header>
       

@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { LanguageSelector } from './LanguageSelector';
 
 export const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -18,13 +21,13 @@ export const Footer: React.FC = () => {
   return (
     <footer 
       id="team"
-      className="items-stretch self-stretch border-t-[color:var(--Gray-900,#171717)] z-0 flex w-full flex-col overflow-hidden justify-center mt-24 md:mt-[200px] px-4 md:px-6 py-8 md:py-11 border-t border-solid font-geist min-h-[280px] md:h-[356px]"
+      className="items-stretch self-stretch border-t-[color:var(--Gray-900,#171717)] z-0 flex w-full flex-col overflow-visible justify-center mt-24 md:mt-[200px] px-6 md:px-8 py-8 md:py-10 border-t border-solid font-geist min-h-[240px] md:min-h-[280px]"
     >
       <div className="max-w-6xl mx-auto w-full">
         {/* Main Content */}
-        <div className="w-full max-w-[1220px] mx-auto flex items-start md:items-center justify-between flex-col md:flex-row gap-8 md:gap-0">
-          {/* Left Section - Logo and Backed by */}
-          <div className="w-full md:w-[197px] flex flex-col justify-start items-center md:items-start gap-8 md:gap-[200px]">
+        <div className="w-full max-w-[1220px] mx-auto flex items-start md:items-center justify-between flex-col md:flex-row gap-8 md:gap-6">
+          {/* Left Section - Logo, Language Selector and Backed by */}
+          <div className="w-full md:w-[240px] flex flex-col justify-start items-center md:items-start gap-6 md:gap-7">
             {/* Logo */}
             <div className="w-full h-9 relative">
               <div className="flex items-center justify-center md:justify-start">
@@ -36,10 +39,15 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             
+            {/* Language Selector */}
+            <div className="flex justify-center md:justify-start relative">
+              <LanguageSelector />
+            </div>
+            
             {/* Backed by */}
-            <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-3">
               <div className="text-neutral-500 text-sm font-normal font-geist leading-[16.8px]">
-                Backed by
+                {t('footer.backedBy')}
               </div>
               <motion.img
                 src="https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/8c97286a6606c0df83382111633afde9c5217362?placeholderIfAbsent=true"
@@ -55,19 +63,31 @@ export const Footer: React.FC = () => {
           </div>
           
           {/* Right Section - Navigation, Social, and Copyright */}
-          <div className="w-full md:w-[130px] flex flex-col justify-center items-center md:items-end gap-8 md:gap-[72px]">
+          <div className="w-full md:w-auto flex flex-col justify-center items-center md:items-end gap-6 md:gap-8">
             {/* Navigation Links */}
-            <div className="w-full md:w-[72px] flex flex-row md:flex-col justify-center items-center md:items-end gap-6 md:gap-4">
-              <div className="text-neutral-500 text-base font-medium font-geist text-center">
-                About
+            <div className="flex flex-row md:flex-col justify-center items-center md:items-end gap-4 md:gap-3">
+              <div className="text-neutral-500 text-base font-medium font-geist text-center md:text-right hover:text-neutral-300 transition-colors cursor-pointer">
+                {t('footer.about')}
               </div>
-              <div className="text-neutral-500 text-base font-medium font-geist text-center">
-                Our Team
+              <div className="text-neutral-500 text-base font-medium font-geist text-center md:text-right hover:text-neutral-300 transition-colors cursor-pointer">
+                {t('footer.ourTeam')}
               </div>
+              <a 
+                href="/privacy-policy" 
+                className="text-neutral-500 text-base font-medium font-geist text-center md:text-right hover:text-neutral-300 transition-colors"
+              >
+                {t('footer.privacyPolicy')}
+              </a>
+              <a 
+                href="/terms" 
+                className="text-neutral-500 text-base font-medium font-geist text-center md:text-right hover:text-neutral-300 transition-colors"
+              >
+                {t('footer.terms')}
+              </a>
             </div>
             
             {/* Social Media Links */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-6">
               <a 
                 href="https://www.instagram.com/calistantapp/" 
                 target="_blank"
@@ -110,8 +130,8 @@ export const Footer: React.FC = () => {
             </div>
             
             {/* Copyright */}
-            <div className="w-full text-neutral-500 text-base font-medium font-geist text-center md:text-right">
-              © 2025 Calistant
+            <div className="text-neutral-500 text-base font-medium font-geist text-center md:text-right">
+              {t('footer.copyright')}
             </div>
           </div>
         </div>

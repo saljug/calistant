@@ -1,0 +1,240 @@
+{
+  "navigation": {
+    "logoAlt": "Calistant logosu",
+    "appStoreAlt": "App Store'dan İndir",
+    "googlePlayAlt": "Google Play'den Al"
+  },
+  "hero": {
+    "title1": "Daha İyi Takip Et.",
+    "title2": "Daha Akıllı Beslen.",
+    "subtitle": "Öğünleri fotoğraf, ses veya metin ile kaydet.",
+    "subtitle2": "Makroları, mikroları takip et ve AI rehberliği ile tutarlı kal.",
+    "backedBy": "Destekçi",
+    "heroImageAlt": "Calistant uygulaması ile telefon tutan el"
+  },
+  "features": {
+    "title": "Temel Özellikler",
+    "hybridLogging": {
+      "title": "Hibrit Kayıt",
+      "description": "Fotoğraf • barkod • metin • ses—hepsi tek dokunuşta."
+    },
+    "deepAnalytics": {
+      "title": "Derinlemesine Analitik",
+      "description": "7/30/90-günlük trendler artı vitamin ve lif takibi."
+    },
+    "aiChat": {
+      "title": "AI Sohbet Asistanı",
+      "description": "Anlık soru-cevap ve görev verme"
+    },
+    "gamification": {
+      "title": "Oyunlaştırma",
+      "description": "Seriler, rozetler ve küresel liderlik tabloları alışkanlık oluşturur."
+    },
+    "smartShopping": {
+      "title": "Akıllı Alışveriş",
+      "description": "Buzdolabından masaya tarifler ve otomatik oluşturulan market listeleri."
+    }
+  },
+  "howItWorks": {
+    "title": "Nasıl Çalışır",
+    "step1": {
+      "title": "Öğününü Kaydet",
+      "description": "Fotoğraf çek, barkod tara veya ses/metin girişi kullan."
+    },
+    "step2": {
+      "title": "AI Analiz Eder",
+      "description": "Makro ve mikro detayları ile anlık beslenme analizi al."
+    },
+    "step3": {
+      "title": "Takip Et ve Geliştir",
+      "description": "Trendleri izle, kişiselleştirilmiş öngörüler al ve daha iyi alışkanlıklar oluştur."
+    }
+  },
+  "comparison": {
+    "title": "Neden Daha İyiyiz",
+    "subtitle": "Calistant'ın rekabeti nasıl geride bıraktığını görün",
+    "feature": "Özellikler",
+    "calistant": "Calistant",
+    "others": "Diğerleri",
+    "hybridLogging": "Fotoğraf, Barkod, Metin, Ses Kaydı",
+    "aiGuidance": "AI Sohbet Asistanı",
+    "gamification": "Oyunlaştırma (Seriler ve Rozetler)",
+    "smartShopping": "Akıllı Alışveriş",
+    "deepAnalytics": "7/30/90-Günlük Derinlemesine Analitik",
+    "privacyFocused": "Gizlilik Odaklı",
+    "yes": "✓",
+    "no": "✗",
+    "limited": "Sınırlı",
+    "footerNote": "✨ Daha akıllı beslenme asistanını seçen diğerlerine katılın"
+  },
+  "faq": {
+    "title": "SSS",
+    "questions": {
+      "free": {
+        "question": "Calistant ücretsiz mi?",
+        "answer": "Evet—Ücretsiz katmanımız sonsuza kadar ücretsiz kalır. Pro'ya yükseltme sınırsız kayıtlar, derinlemesine analitik, AI öğün planları ve daha fazlasının kilidini açar."
+      },
+      "accuracy": {
+        "question": "Beslenme tahminleri ne kadar doğru?",
+        "answer": "AI'mız yaygın öğünlerde ±%10 doğrulukla laboratuvar onaylıdır ve manuel spot kontrollerle beslenme uzmanı onaylı veritabanı kullanır—küçük farklılıklar olabilse de sayılarınıza güvenebilirsiniz. Gerçek dünya kullanıcı geri bildirimlerinde sürekli AI yeniden eğitimi sayılarınızın hassas ve güvenilir kalmasını sağlar."
+      },
+      "cancel": {
+        "question": "Pro aboneliğimi istediğim zaman iptal edebilir miyim?",
+        "answer": "Kesinlikle. Uzun vadeli taahhüt yok—istediğiniz anda yükseltebilir, düşürebilir veya iptal edebilirsiniz."
+      },
+      "platforms": {
+        "question": "Hangi platformlar ve entegrasyonlar destekleniyor?",
+        "answer": "Calistant iOS ve Android'de çalışır. Ayrıca Apple Health, Google Fit ve popüler giyilebilir cihazlarla kutunun dışında senkronize oluruz (yakında daha fazla entegrasyon geliyor)."
+      },
+      "privacy": {
+        "question": "Kişisel verilerim nasıl korunuyor?",
+        "answer": "Tüm veriler aktarımda ve duruş halinde şifrelenir; izniniz olmadan asla paylaşmayız."
+      },
+      "languages": {
+        "question": "Calistant birden fazla dili destekleyecek mi?",
+        "answer": "Lansmanında İngilizce; İspanyolca, Fransızca, Türkçe ve daha fazlası kısa süre sonra geliyor."
+      }
+    }
+  },
+  "footer": {
+    "about": "Hakkında",
+    "ourTeam": "Ekibimiz",
+    "privacyPolicy": "Gizlilik Politikası",
+    "terms": "Şartlar",
+    "backedBy": "Destekçi",
+    "copyright": "© 2025 Calistant",
+    "socialAlt": {
+      "instagram": "Instagram'da takip et",
+      "twitter": "X'te (Twitter) takip et",
+      "linkedin": "LinkedIn'de takip et"
+    }
+  },
+  "pages": {
+    "privacyPolicy": {
+      "title": "Gizlilik Politikası",
+      "lastRevised": "Son revizyon: 6 Haziran 2025",
+      "effective": "Yürürlük: 6 Haziran 2025",
+      "content": {
+        "intro": {
+          "title": "Calistant Gizlilik Politikası",
+          "p1": "Merhaba! Calistant'ta, öğünlerinizi anlamanın matematik problemi çözmek gibi hissettirmemesi gerektiğine inanıyoruz. Öğün takibini kolay, akıllı ve hatta biraz eğlenceli hale getirerek daha sağlıklı alışkanlıklar oluşturmanıza yardımcı olmak için buradayız. Tıbbi veya diyet hizmeti değiliz. Bu kişisel bir yolculuk olduğu için, deneyiminizi mümkün olduğunca yararlı ve kişiselleştirilmiş hale getirmek için bazı bilgiler topluyoruz.",
+          "p2": "Bu Gizlilik Politikası, uygulamayı kullanımınız sırasında Calistant'ın kişisel bilgilerinizi nasıl işlediğini özetler. Hangi tür verilerin toplandığını, nasıl kullanıldığını ve gizliliğinizin nasıl korunduğunu açıklar. Ayrıca haklarınız ve verilerinizle ilgili sahip olduğunuz seçenekler hakkında bilgi bulacaksınız.",
+          "p3": "Calistant 13 yaşın üzerindeki kişiler için tasarlanmıştır. 13 yaşın altındaysanız, lütfen hesap oluşturmayın veya Calistant'ı kullanmayın."
+        },
+        "medicalDisclaimer": {
+          "title": "Calistant tıbbi tavsiye uygulaması değildir",
+          "items": {
+            "0": "Calistant lisanslı bir sağlık hizmeti sağlayıcısı değildir veya tıbbi tavsiyenin yerine geçmez.",
+            "1": "Tüm öneriler ve görüşler AI tarafından üretilir ve yalnızca bilgilendirici olarak kabul edilmelidir.",
+            "2": "Kullanıcılar önemli diyet değişiklikleri yapmadan önce nitelikli bir doktor veya diyetisyene danışmalıdır.",
+            "3": "Calistant kişiselleştirilmiş diyet planları veya alerjiye güvenli öneriler üretmez.",
+            "4": "Herhangi bir tıbbi durumunuz, gıda alerjiniz veya diyet kısıtlamanız varsa, lütfen bir profesyonele danışın."
+          },
+          "note": "Bu uygulama bir diyet üreticisi değildir. Gıda planlaması ve farkındalığı için destekleyici bir araçtır. Uygulama çıktılarına dayalı kararlar kullanıcının sorumluluğundadır."
+        },
+        "aiLimitations": {
+          "title": "AI Sınırlamaları",
+          "items": {
+            "0": "Uygulama yanlış, eksik veya yanıltıcı bilgiler üretebilen AI algoritmaları kullanır.",
+            "1": "AI yiyecekleri yanlış sınıflandırabilir veya alerjenleri tespit etmeyebilir.",
+            "2": "Her yiyecek girişi, barkod veya kullanıcı tarafından oluşturulan içeriğin beslenme doğruluğunu garanti edemeyiz."
+          }
+        },
+        "dataCollection": {
+          "title": "Topladığımız Kişisel Bilgiler",
+          "intro": "Kişisel bilgilerinizi üç ana kaynaktan toplayabiliriz: doğrudan sizden, Hizmetlerimizle etkileşiminiz sırasında otomatik olarak ve yetkili üçüncü taraflardan.",
+          "directCollection": {
+            "title": "Doğrudan Sizden Topladığımız Kişisel Bilgiler",
+            "account": {
+              "title": "Hesap ve Profil Bilgileri",
+              "content": "Calistant'a kaydolduğunuzda, adınız, e-posta adresiniz, genel konumunuz (ülke gibi), profil resminiz (yüklemeyi seçerseniz), kullanıcı adınız, şifreniz, doğum tarihiniz ve cinsiyetiniz gibi ayrıntıları sağlayabilirsiniz."
+            },
+            "foodData": {
+              "title": "Yiyecek ve Aktivite Günlüğü Verileri",
+              "intro": "Calistant, öğünleri kaydetmenize, aktivitenizi takip etmenize ve sağlık hedeflerinizi izlemenize olanak tanıyan özellikler içerir. Bu özellikleri kullanırken, aşağıdaki gibi bilgileri gönüllü olarak gönderebilirsiniz:",
+              "items": {
+                "0": "Beslenme ve yeme alışkanlıkları",
+                "1": "Tükettiğiniz yiyecek, içecek ve ilaçlar (sesli giriş, metin veya barkod tarama yoluyla kaydedilenler dahil) ve gelecekte muhtemelen üçüncü taraf entegrasyonları aracılığıyla satın alınan market ürünleri",
+                "2": "Kalori alımı ve besin dağılımı",
+                "3": "Diyet tercihleri veya kısıtlamaları",
+                "4": "Fitness aktivitesi, egzersiz rutinleri ve ilgili hedefler (örn. \"günlük protein alımını artır\")",
+                "5": "Uyku verileri gibi yaşam tarzı alışkanlıkları",
+                "6": "Boy, kilo ve BMI gibi vücutla ilgili ölçümler",
+                "7": "Fiziksel veya sağlık durumlarıyla ilgili bilgiler",
+                "8": "İsteğe bağlı ilerleme fotoğrafları",
+                "9": "Alışkanlıklarınız, fiziksel durumunuz veya zihniyetiniz hakkındaki notlar veya düşünceler"
+              },
+              "note": "Bu verilerin bir kısmı, doğrudan veya dolaylı olarak bir tıbbi veya sağlık durumunu gösteriyorsa hassas kişisel bilgi olarak kabul edilebilir."
+            }
+          }
+        },
+        "automaticCollection": {
+          "title": "Otomatik Olarak Toplanan Kişisel Bilgiler: Kullanım, Cihaz Verileri ve Çerezler",
+          "intro": "Calistant, cihazınızla ilgili belirli bilgileri ve Hizmetlerle nasıl etkileşim kurduğunuzu otomatik olarak toplayabilir. Bu, tarayıcı türünüz, işletim sisteminiz, cihaz modeliniz, benzersiz tanımlayıcılar (örn. IP adresi, mobil reklam kimliği, çerez kimliği), internet servis sağlayıcınız ve mobil ağ operatörünüz gibi teknik ayrıntıları içerir.",
+          "cookies": {
+            "title": "Çerezler Nedir?",
+            "content": "Çerezler, bir web sitesini ziyaret ettiğinizde veya web tabanlı bir uygulama kullandığınızda tarayıcınız tarafından cihazınızda saklanan küçük veri dosyalarıdır. Birçok dijital platform gibi, Calistant ve yetkili üçüncü taraf ortakları çeşitli izleme teknolojileri kullanabilir."
+          },
+          "management": {
+            "title": "Çerez Tercihlerinizi Yönetme",
+            "content": "Çoğu tarayıcı, tüm çerezleri kabul etmek, tüm çerezleri reddetmek veya cihazınıza her çerez yerleştirildiğinde sizi bilgilendirmek için ayarlarınızı değiştirmenize olanak tanır. Çerezleri devre dışı bırakır veya reddederseniz, Calistant Hizmetlerinin belirli özelliklerinin artık amaçlandığı gibi çalışmayabileceğini unutmayın."
+          }
+        },
+        "dataUsage": {
+          "title": "Kişisel Bilgilerinizi Nasıl Kullanırız",
+          "intro": "Calistant, topladığımız kişisel bilgileri aşağıda özetlenen amaçlar için veya verilerin toplandığı anda açıkça belirtilen diğer amaçlar için kullanabilir.",
+          "functionality": {
+            "title": "Hizmet İşlevselliği ve Kullanıcı Deneyimi",
+            "intro": "Kişisel bilgiler şu amaçlarla işlenebilir:",
+            "items": {
+              "0": "Calistant platformunun özelliklerini ve performansını işletmek, sürdürmek ve geliştirmek",
+              "1": "Kullanıcı profilinizi ve hesabınızı oluşturmak ve yönetmek",
+              "2": "Uygulama güncellemeleri, bildirimler, hesapla ilgili uyarılar ve idari bildirimler dahil olmak üzere temel hizmet bilgilerini iletmek",
+              "3": "Tercihler, alışkanlıklar ve kullanım davranışı temelinde deneyiminizi ve içeriğinizi özelleştirmek",
+              "4": "Zamanında teknik yardım sağlamak, destek taleplerini ele almak ve kullanıcı sorularını veya endişelerini gidermek"
+            }
+          }
+        },
+        "dataSharing": {
+          "title": "Kişisel Bilgileri Nasıl Paylaşırız",
+          "intro": "Calistant, kişisel verileri belirli üçüncü taraf kategorileriyle, her zaman bu Gizlilik Politikasında açıklanan amaçlar ve geçerli yasal gereksinimlerle uyumlu olarak paylaşabilir."
+        },
+        "dataRetention": {
+          "title": "Calistant Bilgilerinizi Nasıl Saklar",
+          "content": "Calistant, kişisel bilgilerinizi bu Gizlilik Politikasında açıklanan amaçları desteklemek için gerekli olduğu sürece, yasal, düzenleyici veya raporlama yükümlülüklerini yerine getirmek dahil olmak üzere saklar."
+        },
+        "dataSecurity": {
+          "title": "Calistant Bilgilerinizi Nasıl Korur",
+          "content": "Calistant, kişisel bilgilerinizi kayıp, kötüye kullanım, yetkisiz erişim, ifşa, değişiklik veya imhadan korumaya yardımcı olmak için teknik, organizasyonel ve idari önlemlerin bir kombinasyonunu uygular."
+        },
+        "privacyRights": {
+          "title": "Gizlilik Haklarınız",
+          "intro": "İkamet ettiğiniz yere bağlı olarak, kişisel bilgilerinizin nasıl toplandığı, kullanıldığı, saklandığı ve paylaşıldığı konusunda belirli yasal haklarınız olabilir.",
+          "contact": "Bu Gizlilik Politikası veya Calistant'ın veri uygulamalarıyla ilgili herhangi bir sorunuz, endişeniz veya talebiniz varsa, bizimle şu adresten iletişime geçebilirsiniz: privacy@calistant.com"
+        }
+      }
+    },
+    "terms": {
+      "title": "Hizmet Şartları",
+      "comingSoon": "Hizmet Şartları içeriği yakında geliyor."
+    },
+    "notFound": {
+      "title": "Sayfa Bulunamadı",
+      "message": "Aradığınız sayfa mevcut değil.",
+      "backHome": "Ana Sayfaya Dön"
+    }
+  },
+  "cta": {
+    "title": "Beslenme Yolculuğunu Dönüştürmeye Hazır mısın?",
+    "subtitle": "Calistant ile zaten daha akıllı yemeye başlayan binlerce kişiye katıl.",
+    "downloadNow": "Şimdi İndir"
+  },
+  "waitlist": {
+    "title": "Bekleme Listesine Katıl",
+    "subtitle": "Beslenme takibinin geleceğini ilk deneyimleyenler arasında ol.",
+    "emailPlaceholder": "E-posta adresinizi girin",
+    "joinButton": "Bekleme Listesine Katıl",
+    "success": "Katıldığınız için teşekkürler! Yakında sizinle iletişime geçeceğiz.",
+    "error": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+  }
+} 

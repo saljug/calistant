@@ -1,0 +1,240 @@
+{
+  "navigation": {
+    "logoAlt": "Logo Calistant",
+    "appStoreAlt": "Télécharger sur l'App Store",
+    "googlePlayAlt": "Télécharger sur Google Play"
+  },
+  "hero": {
+    "title1": "Suivez Mieux.",
+    "title2": "Mangez Plus Intelligemment.",
+    "subtitle": "Enregistrez vos repas par photo, voix ou texte.",
+    "subtitle2": "Suivez les macros, micros et restez cohérent avec l'IA.",
+    "backedBy": "Soutenu par",
+    "heroImageAlt": "Main tenant un téléphone avec l'interface de l'app Calistant"
+  },
+  "features": {
+    "title": "Fonctionnalités Clés",
+    "hybridLogging": {
+      "title": "Journalisation Hybride",
+      "description": "Photo • code-barres • texte • voix—tout en un clic."
+    },
+    "deepAnalytics": {
+      "title": "Analyses Approfondies",
+      "description": "Tendances 7/30/90 jours plus suivi vitamines et fibres."
+    },
+    "aiChat": {
+      "title": "Assistant IA de Chat",
+      "description": "Q&R à la demande et donner des tâches"
+    },
+    "gamification": {
+      "title": "Gamification",
+      "description": "Séries, badges et classements mondiaux stimulent l'habitude."
+    },
+    "smartShopping": {
+      "title": "Shopping Intelligent",
+      "description": "Recettes frigo-à-table et listes de courses auto-générées."
+    }
+  },
+  "howItWorks": {
+    "title": "Comment Ça Fonctionne",
+    "step1": {
+      "title": "Enregistrez Votre Repas",
+      "description": "Prenez une photo, scannez un code-barres ou utilisez l'entrée vocale/texte."
+    },
+    "step2": {
+      "title": "L'IA Analyse",
+      "description": "Obtenez une répartition nutritionnelle instantanée avec détails macro et micro."
+    },
+    "step3": {
+      "title": "Suivez et Améliorez",
+      "description": "Surveillez les tendances, obtenez des insights personnalisés et développez de meilleures habitudes."
+    }
+  },
+  "comparison": {
+    "title": "Pourquoi Nous Sommes Meilleurs",
+    "subtitle": "Voyez comment Calistant surpasse la concurrence",
+    "feature": "Fonctionnalités",
+    "calistant": "Calistant",
+    "others": "Autres",
+    "hybridLogging": "Log Photo, Code-barres, Texte, Voix",
+    "aiGuidance": "Assistant IA de Chat",
+    "gamification": "Gamification (Séries et Badges)",
+    "smartShopping": "Shopping Intelligent",
+    "deepAnalytics": "Analyses Approfondies 7/30/90 Jours",
+    "privacyFocused": "Axé sur la Confidentialité",
+    "yes": "✓",
+    "no": "✗",
+    "limited": "Limité",
+    "footerNote": "✨ Rejoignez d'autres qui ont déjà choisi l'assistant nutritionnel plus intelligent"
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": {
+      "free": {
+        "question": "Calistant est-il gratuit ?",
+        "answer": "Oui—notre niveau gratuit reste gratuit pour toujours. Passer à Pro débloque des logs illimités, des analyses approfondies, des plans de repas IA et plus."
+      },
+      "accuracy": {
+        "question": "Quelle est la précision des estimations nutritionnelles ?",
+        "answer": "Notre IA est validée en laboratoire à ±10% sur les repas courants et utilise une base de données vérifiée par des nutritionnistes avec des contrôles ponctuels manuels—donc bien que des écarts mineurs puissent survenir, vous pouvez faire confiance à vos chiffres. Le ré-entraînement continu de l'IA sur les retours d'utilisateurs réels assure que vos chiffres restent précis et fiables."
+      },
+      "cancel": {
+        "question": "Puis-je annuler mon abonnement Pro à tout moment ?",
+        "answer": "Absolument. Il n'y a pas d'engagement à long terme—vous pouvez upgrader, downgrader ou annuler à tout moment."
+      },
+      "platforms": {
+        "question": "Quelles plateformes et intégrations sont supportées ?",
+        "answer": "Calistant fonctionne sur iOS et Android. Nous synchronisons aussi avec Apple Health, Google Fit et les wearables populaires prêts à l'emploi (plus d'intégrations arrivent bientôt)."
+      },
+      "privacy": {
+        "question": "Comment mes données personnelles sont-elles protégées ?",
+        "answer": "Toutes les données sont chiffrées en transit et au repos ; nous ne partageons jamais sans votre consentement."
+      },
+      "languages": {
+        "question": "Calistant supportera-t-il plusieurs langues ?",
+        "answer": "Anglais au lancement ; Espagnol, Français, Turc et plus arrivent peu après."
+      }
+    }
+  },
+  "footer": {
+    "about": "À Propos",
+    "ourTeam": "Notre Équipe",
+    "privacyPolicy": "Politique de Confidentialité",
+    "terms": "Conditions",
+    "backedBy": "Soutenu par",
+    "copyright": "© 2025 Calistant",
+    "socialAlt": {
+      "instagram": "Suivez-nous sur Instagram",
+      "twitter": "Suivez-nous sur X (Twitter)",
+      "linkedin": "Suivez-nous sur LinkedIn"
+    }
+  },
+  "pages": {
+    "privacyPolicy": {
+      "title": "Politique de Confidentialité",
+      "lastRevised": "Dernière révision : 6 juin 2025",
+      "effective": "Effectif : 6 juin 2025",
+      "content": {
+        "intro": {
+          "title": "Politique de Confidentialité de Calistant",
+          "p1": "Bonjour ! Chez Calistant, nous croyons que comprendre vos repas ne devrait pas ressembler à résoudre un problème de mathématiques. Nous sommes là pour vous aider à développer des habitudes plus saines en rendant le suivi des repas facile, intelligent et même un peu amusant. Nous ne sommes pas un service médical ou diététique. Comme c'est un parcours personnel, nous collectons certaines informations pour rendre votre expérience aussi utile et personnalisée que possible.",
+          "p2": "Cette Politique de Confidentialité décrit comment Calistant traite vos informations personnelles pendant votre utilisation de l'application. Elle explique quel type de données est collecté, comment elles sont utilisées et comment votre vie privée est protégée. Vous trouverez également des informations sur vos droits et les choix que vous avez concernant vos données.",
+          "p3": "Calistant est conçu pour les personnes de plus de 13 ans. Si vous avez moins de 13 ans, veuillez ne pas créer de compte ou utiliser Calistant."
+        },
+        "medicalDisclaimer": {
+          "title": "Calistant n'est pas une application de conseils médicaux",
+          "items": {
+            "0": "Calistant n'est pas un fournisseur de soins de santé agréé ou un substitut aux conseils médicaux.",
+            "1": "Toutes les suggestions et perspectives sont générées par l'IA et doivent être considérées comme informatives uniquement.",
+            "2": "Les utilisateurs doivent consulter un médecin ou diététicien qualifié avant d'apporter des changements alimentaires significatifs.",
+            "3": "Calistant ne génère pas de plans alimentaires personnalisés ou de recommandations sans allergènes.",
+            "4": "Si vous avez une condition médicale, une allergie alimentaire ou une restriction alimentaire, veuillez consulter un professionnel."
+          },
+          "note": "Cette application n'est pas un générateur de régime. C'est un outil de soutien pour la planification alimentaire et la sensibilisation. Les décisions basées sur les résultats de l'application sont de la responsabilité de l'utilisateur."
+        },
+        "aiLimitations": {
+          "title": "Limitations de l'IA",
+          "items": {
+            "0": "L'application utilise des algorithmes d'IA qui peuvent produire des informations inexactes, incomplètes ou trompeuses.",
+            "1": "L'IA peut mal classer les aliments ou ne pas détecter les allergènes.",
+            "2": "Nous ne pouvons pas garantir la précision nutritionnelle de chaque entrée alimentaire, code-barres ou contenu généré par l'utilisateur."
+          }
+        },
+        "dataCollection": {
+          "title": "Informations personnelles que nous collectons",
+          "intro": "Nous pouvons collecter vos informations personnelles via trois sources principales : directement de vous, automatiquement lors de votre interaction avec nos Services, et de tiers autorisés.",
+          "directCollection": {
+            "title": "Informations personnelles que nous collectons directement de vous",
+            "account": {
+              "title": "Informations de compte et de profil",
+              "content": "Lorsque vous vous inscrivez à Calistant, vous pouvez fournir des détails tels que votre nom, adresse e-mail, localisation générale (comme le pays), image de profil (si vous choisissez d'en télécharger une), nom d'utilisateur, mot de passe, date de naissance et sexe."
+            },
+            "foodData": {
+              "title": "Données de journal alimentaire et d'activité",
+              "intro": "Calistant inclut des fonctionnalités qui vous permettent d'enregistrer des repas, de suivre votre activité et de surveiller vos objectifs de santé. Lors de l'utilisation de ces fonctionnalités, vous pouvez volontairement soumettre des informations telles que :",
+              "items": {
+                "0": "Habitudes alimentaires et nutritionnelles",
+                "1": "Aliments, boissons et médicaments que vous consommez (y compris ceux enregistrés via saisie vocale, texte ou scan de code-barres), et à l'avenir, possiblement des produits alimentaires achetés via des intégrations tierces",
+                "2": "Apport calorique et répartition des nutriments",
+                "3": "Préférences ou restrictions alimentaires",
+                "4": "Activité physique, routines d'exercice et objectifs connexes (par ex. \"augmenter l'apport quotidien en protéines\")",
+                "5": "Habitudes de style de vie comme les données de sommeil",
+                "6": "Métriques corporelles comme la taille, le poids et l'IMC",
+                "7": "Informations liées aux conditions physiques ou de santé",
+                "8": "Photos de progression optionnelles",
+                "9": "Notes ou réflexions sur vos habitudes, condition physique ou état d'esprit"
+              },
+              "note": "Certaines de ces données peuvent être considérées comme des informations personnelles sensibles si elles indiquent directement ou indirectement une condition médicale ou de santé."
+            }
+          }
+        },
+        "automaticCollection": {
+          "title": "Informations personnelles collectées automatiquement : Utilisation, données d'appareil et cookies",
+          "intro": "Calistant peut automatiquement collecter certaines informations liées à votre appareil et à la façon dont vous interagissez avec les Services. Cela inclut des détails techniques tels que votre type de navigateur, système d'exploitation, modèle d'appareil, identifiants uniques (par ex. adresse IP, ID publicitaire mobile, ID de cookie), fournisseur de services Internet et opérateur de réseau mobile.",
+          "cookies": {
+            "title": "Que sont les cookies ?",
+            "content": "Les cookies sont de petits fichiers de données stockés sur votre appareil par votre navigateur lorsque vous visitez un site web ou utilisez une application web. Comme de nombreuses plateformes numériques, Calistant et ses partenaires tiers autorisés peuvent utiliser diverses technologies de suivi."
+          },
+          "management": {
+            "title": "Gestion de vos préférences de cookies",
+            "content": "La plupart des navigateurs vous permettent de modifier vos paramètres pour accepter tous les cookies, rejeter tous les cookies, ou vous notifier chaque fois qu'un cookie est placé sur votre appareil. Notez que si vous désactivez ou rejetez les cookies, certaines fonctionnalités des Services de Calistant peuvent ne plus fonctionner comme prévu."
+          }
+        },
+        "dataUsage": {
+          "title": "Comment nous utilisons vos informations personnelles",
+          "intro": "Calistant peut utiliser les informations personnelles que nous collectons aux fins décrites ci-dessous, ou comme autrement clairement communiqué au moment où les données sont collectées.",
+          "functionality": {
+            "title": "Fonctionnalité du service et expérience utilisateur",
+            "intro": "Les informations personnelles peuvent être traitées pour :",
+            "items": {
+              "0": "Exploiter, maintenir et améliorer les fonctionnalités et performances de la plateforme Calistant",
+              "1": "Créer et gérer votre profil utilisateur et compte",
+              "2": "Communiquer des informations de service essentielles, y compris les mises à jour d'application, notifications, alertes liées au compte et avis administratifs",
+              "3": "Personnaliser votre expérience et contenu basé sur les préférences, habitudes et comportement d'utilisation",
+              "4": "Fournir une assistance technique opportune, traiter les demandes de support et adresser les questions ou préoccupations des utilisateurs"
+            }
+          }
+        },
+        "dataSharing": {
+          "title": "Comment nous partageons les informations personnelles",
+          "intro": "Calistant peut partager des données personnelles avec des catégories spécifiques de tiers, toujours en alignement avec les objectifs décrits dans cette Politique de Confidentialité et les exigences légales applicables."
+        },
+        "dataRetention": {
+          "title": "Comment Calistant conserve vos informations",
+          "content": "Calistant conserve vos informations personnelles aussi longtemps que nécessaire pour soutenir les objectifs décrits dans cette Politique de Confidentialité, y compris pour se conformer aux obligations légales, réglementaires ou de rapport."
+        },
+        "dataSecurity": {
+          "title": "Comment Calistant protège vos informations",
+          "content": "Calistant met en œuvre une combinaison de mesures techniques, organisationnelles et administratives pour aider à protéger vos informations personnelles contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation, l'altération ou la destruction."
+        },
+        "privacyRights": {
+          "title": "Vos droits à la vie privée",
+          "intro": "Selon votre lieu de résidence, vous pouvez avoir des droits légaux spécifiques concernant la façon dont vos informations personnelles sont collectées, utilisées, stockées et partagées.",
+          "contact": "Si vous avez des questions, préoccupations ou demandes liées à cette Politique de Confidentialité ou aux pratiques de données de Calistant, vous pouvez nous contacter à : privacy@calistant.com"
+        }
+      }
+    },
+    "terms": {
+      "title": "Conditions de Service",
+      "comingSoon": "Le contenu des Conditions de Service arrive bientôt."
+    },
+    "notFound": {
+      "title": "Page Non Trouvée",
+      "message": "La page que vous cherchez n'existe pas.",
+      "backHome": "Retour à l'Accueil"
+    }
+  },
+  "cta": {
+    "title": "Prêt à Transformer Votre Parcours Nutritionnel ?",
+    "subtitle": "Rejoignez des milliers qui ont déjà commencé à manger plus intelligemment avec Calistant.",
+    "downloadNow": "Télécharger Maintenant"
+  },
+  "waitlist": {
+    "title": "Rejoindre la Liste d'Attente",
+    "subtitle": "Soyez les premiers à expérimenter l'avenir du suivi nutritionnel.",
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "joinButton": "Rejoindre la Liste d'Attente",
+    "success": "Merci d'avoir rejoint ! Nous vous contacterons bientôt.",
+    "error": "Quelque chose s'est mal passé. Veuillez réessayer."
+  }
+} 

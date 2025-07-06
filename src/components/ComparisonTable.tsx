@@ -1,23 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-const features = [
-  "Photo, Barcode, Text, Voice Log",
-  "7/30/90-Day Deep Analytics",
-  "AI Chat Assistant",
-  "Vitamin & Fiber Tracking",
-  "Gamification (Streaks & Badges)"
-];
+import { useTranslation } from 'react-i18next';
 
 export const ComparisonTable: React.FC = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    t('comparison.hybridLogging'),
+    t('comparison.deepAnalytics'),
+    t('comparison.aiGuidance'),
+    t('comparison.smartShopping'),
+    t('comparison.gamification')
+  ];
+
   return (
     <section className="z-0 flex w-full max-w-6xl mx-auto flex-col items-center mt-24 md:mt-[200px] px-4 md:px-6">
       <header className="text-center mb-8 md:mb-12">
         <h2 className="text-white text-2xl md:text-[32px] font-bold leading-none">
-          Why We're Better
+          {t('comparison.title')}
         </h2>
         <p className="text-neutral-400 text-base md:text-lg mt-4">
-          See how Calistant outshines the competition
+          {t('comparison.subtitle')}
         </p>
       </header>
       
@@ -28,17 +31,17 @@ export const ComparisonTable: React.FC = () => {
           <div className="bg-gradient-to-r from-neutral-800 to-neutral-900 border-b border-neutral-700">
             <div className="flex w-full items-center">
               <div className="flex-1 px-3 md:px-6 py-3 md:py-4">
-                <h3 className="text-white text-base md:text-lg font-semibold">Features</h3>
+                <h3 className="text-white text-base md:text-lg font-semibold">{t('comparison.feature')}</h3>
               </div>
               <div className="w-20 md:w-32 px-2 md:px-6 py-3 md:py-4 text-center border-l border-neutral-700">
                 <div className="flex flex-col items-center">
-                  <h3 className="text-[#F05B25] text-sm md:text-lg font-semibold">Calistant</h3>
-                  <div className="w-6 md:w-8 h-1 bg-[#F05B25] rounded-full mt-1"></div>
+                  <h3 className="text-brand-orange text-sm md:text-lg font-semibold">{t('comparison.calistant')}</h3>
+                  <div className="w-6 md:w-8 h-1 bg-brand-orange rounded-full mt-1"></div>
                 </div>
               </div>
               <div className="w-20 md:w-32 px-2 md:px-6 py-3 md:py-4 text-center border-l border-neutral-700">
                 <div className="flex flex-col items-center">
-                  <h3 className="text-neutral-400 text-sm md:text-lg font-semibold">Others</h3>
+                  <h3 className="text-neutral-400 text-sm md:text-lg font-semibold">{t('comparison.others')}</h3>
                   <div className="w-6 md:w-8 h-1 bg-neutral-600 rounded-full mt-1"></div>
                 </div>
               </div>
@@ -133,7 +136,7 @@ export const ComparisonTable: React.FC = () => {
           className="text-center mt-6"
         >
           <p className="text-neutral-500 text-xs md:text-sm">
-            ✨ Join others who've already chosen the smarter nutrition assistant
+            {t('comparison.footerNote')}
           </p>
         </motion.div>
       </div>

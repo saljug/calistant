@@ -30,7 +30,7 @@ export const ConfirmationDialog: React.FC<ConfirmationDialogProps> = ({ isOpen, 
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", damping: 15, stiffness: 400 }}
-              className="w-16 h-16 bg-[#F05B25] rounded-full flex items-center justify-center mx-auto mb-6"
+              className="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center mx-auto mb-6"
             >
               <svg
                 className="w-8 h-8 text-white"

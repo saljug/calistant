@@ -1,28 +1,30 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { StepCard } from './StepCard';
 
-const steps = [
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/23aedc181027ec85f41273befc91fb52fafc6c3c?placeholderIfAbsent=true",
-    title: "Log in a Snap",
-    description: "Tap the + and snap a photo, scan a barcode, type or speak your meal."
-  },
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/57441d4f979423b915b48d9dd7250adfb32a2a52?placeholderIfAbsent=true",
-    title: "See Instant Result",
-    description: "Get calories & macros and more auto-analyzed in seconds"
-  },
-  {
-    icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/676f2db26b6ca4695f5e15fcd1985b272a1f9af4?placeholderIfAbsent=true",
-    title: "Add & Earn",
-    description: "Hit \"Add\" to save your entry, unlock AI tips and earn badges."
-  }
-];
-
 export const HowItWorksSection: React.FC = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const steps = [
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/23aedc181027ec85f41273befc91fb52fafc6c3c?placeholderIfAbsent=true",
+      title: t('howItWorks.step1.title'),
+      description: t('howItWorks.step1.description')
+    },
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/57441d4f979423b915b48d9dd7250adfb32a2a52?placeholderIfAbsent=true",
+      title: t('howItWorks.step2.title'),
+      description: t('howItWorks.step2.description')
+    },
+    {
+      icon: "https://cdn.builder.io/api/v1/image/assets/b872b8b6abae4d0cb339db9d1b6a8455/676f2db26b6ca4695f5e15fcd1985b272a1f9af4?placeholderIfAbsent=true",
+      title: t('howItWorks.step3.title'),
+      description: t('howItWorks.step3.description')
+    }
+  ];
 
   return (
     <motion.section 
@@ -38,7 +40,7 @@ export const HowItWorksSection: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <h2 className="text-white text-2xl md:text-[32px] font-bold leading-none">
-          How it Works
+          {t('howItWorks.title')}
         </h2>
       </motion.header>
       

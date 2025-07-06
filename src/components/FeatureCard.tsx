@@ -16,10 +16,10 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, descripti
       transition={{ duration: 0.2 }}
     >
       <div className="justify-start items-center gap-5 inline-flex">
-        <div className="w-[50px] h-[50px] relative bg-neutral-950 overflow-hidden rounded-xl">
+        <div className="w-[50px] h-[50px] relative">
           <img
             src={icon}
-            className="w-10 h-10 left-[5px] top-[5px] absolute"
+            className="w-full h-full object-contain"
             style={{
               filter: 'hue-rotate(-124deg) saturate(2) brightness(1.4)'
             }}
