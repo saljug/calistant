@@ -14,16 +14,16 @@ const CookieNotice: React.FC = () => {
             <div className="mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Cookie Notice</h1>
               <div className="text-neutral-400 text-lg">
-                <p>Learn about how we use cookies and similar technologies on our website.</p>
+                <p>Learn about how we use cookies and tracking technologies on our website.</p>
               </div>
             </div>
 
             {/* Content Placeholder */}
             <section className="mb-12">
-              <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-8 text-center">
+              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Coming Soon</h2>
                 <p className="text-neutral-400 text-lg">
-                  This page is under construction. Check back soon for our cookie policy.
+                  This page is under construction. Check back soon for our cookie policy and preferences.
                 </p>
               </div>
             </section>

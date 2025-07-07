@@ -30,7 +30,7 @@ const DeleteAccount: React.FC = () => {
                 To delete your Calistant account and all associated data:
               </p>
               
-              <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-6 mb-8">
+              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 mb-8">
                 <ol className="space-y-4 text-neutral-300 text-lg leading-relaxed">
                   <li className="flex items-start">
                     <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mr-3 mt-0.5 flex-shrink-0">1</span>
@@ -50,7 +50,7 @@ const DeleteAccount: React.FC = () => {
 
             {/* Data Deletion Info */}
             <section className="mb-12">
-              <div className="bg-blue-950/20 border border-blue-800/30 rounded-lg p-6 mb-8">
+              <div className="bg-blue-950/20 border border-blue-800/30 rounded-2xl p-6 mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-200 flex items-center">
                   <Icon icon={clipboardIcon} className="w-5 h-5 mr-2" />
                   We delete the following data upon request:
@@ -67,7 +67,7 @@ const DeleteAccount: React.FC = () => {
                 </ul>
               </div>
               
-              <div className="bg-red-950/20 border border-red-800/30 rounded-lg p-6">
+              <div className="bg-red-950/20 border border-red-800/30 rounded-2xl p-6">
                 <p className="text-red-200 text-lg leading-relaxed font-semibold flex items-center">
                   <Icon icon={warningTriangleIcon} className="w-5 h-5 mr-2" />
                   All deletions are permanent and processed immediately.
@@ -82,7 +82,7 @@ const DeleteAccount: React.FC = () => {
                 <p className="text-neutral-300 text-lg leading-relaxed mb-6">
                   If you're unable to access the Calistant app to delete your account through the normal process, we can help you with manual account deletion.
                 </p>
-                <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-6">
+                <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6">
                   <p className="text-neutral-300 text-lg leading-relaxed">
                     Email us at <a href="mailto:support@calistant.com" className="text-blue-400 hover:text-blue-300 underline font-semibold">support@calistant.com</a> and request manual account deletion.
                   </p>
@@ -93,7 +93,7 @@ const DeleteAccount: React.FC = () => {
             {/* Data Retention Policy */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6">Data Retention</h2>
-              <div className="bg-green-950/20 border border-green-800/30 rounded-lg p-6">
+              <div className="bg-green-950/20 border border-green-800/30 rounded-2xl p-6">
                 <p className="text-green-200 text-lg leading-relaxed mb-4 flex items-center">
                   <Icon icon={shieldCheckIcon} className="w-5 h-5 mr-2" />
                   <strong>We do not retain deleted user data.</strong> Any backups are overwritten within 7 days.
@@ -108,12 +108,12 @@ const DeleteAccount: React.FC = () => {
             <section className="mb-12 border-t border-neutral-800 pt-8">
               <h2 className="text-3xl font-bold mb-6">Related Resources</h2>
               <div className="grid md:grid-cols-2 gap-4">
-                <a href="/privacy" className="block bg-neutral-900 border border-neutral-800 rounded-lg p-6 hover:border-neutral-700 transition-colors">
-                  <h3 className="text-xl font-semibold mb-2 text-blue-400">Privacy Policy</h3>
+                <a href="/privacy" className="block bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-neutral-700 transition-colors">
+                  <h3 className="text-xl font-semibold mb-2 text-white">Privacy Policy</h3>
                   <p className="text-neutral-400">Learn more about how we handle your data and privacy</p>
                 </a>
-                <a href="/terms" className="block bg-neutral-900 border border-neutral-800 rounded-lg p-6 hover:border-neutral-700 transition-colors">
-                  <h3 className="text-xl font-semibold mb-2 text-blue-400">Terms of Service</h3>
+                <a href="/terms" className="block bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-neutral-700 transition-colors">
+                  <h3 className="text-xl font-semibold mb-2 text-white">Terms of Service</h3>
                   <p className="text-neutral-400">Review our terms and conditions</p>
                 </a>
               </div>

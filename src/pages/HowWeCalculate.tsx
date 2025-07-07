@@ -22,9 +22,9 @@ const HowWeCalculate: React.FC = () => {
             </div>
 
             {/* Medical Disclaimer */}
-            <section className="mb-12 bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+            <section className="mb-12 bg-neutral-900 border border-neutral-800 rounded-2xl p-6">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-yellow-500/20 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-yellow-500/20 rounded-2xl flex items-center justify-center">
                   <svg className="w-5 h-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
@@ -71,7 +71,7 @@ const HowWeCalculate: React.FC = () => {
                 We calculate BMR using the <strong>Mifflin-St Jeor Equation</strong>, which is one of the most accurate formulas validated in nutritional science:
               </p>
               
-              <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-6 mb-6">
+              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 mb-6">
                 <h4 className="text-xl font-semibold mb-3 text-green-400">For men:</h4>
                 <p className="text-neutral-200 text-lg font-mono bg-neutral-800 p-3 rounded">
                   {t('pages.howWeCalculate.bmr.equations.men')}
@@ -83,9 +83,9 @@ const HowWeCalculate: React.FC = () => {
                 </p>
               </div>
 
-              <div className="bg-blue-950/50 border border-blue-800/50 rounded-xl p-5">
+              <div className="bg-blue-950/50 border border-blue-800/50 rounded-2xl p-5">
                 <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-2xl flex items-center justify-center">
                     <svg className="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
@@ -110,7 +110,7 @@ const HowWeCalculate: React.FC = () => {
               </p>
 
               <div className="overflow-x-auto">
-                <div className="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden">
+                <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gradient-to-r from-neutral-800 to-neutral-700">
@@ -148,7 +148,7 @@ const HowWeCalculate: React.FC = () => {
                 This gives us your <strong>baseline calorie needs</strong> to maintain your current weight.
               </p>
 
-              <div className="bg-blue-950 border border-blue-800 rounded-lg p-4 mt-6">
+              <div className="bg-blue-950 border border-blue-800 rounded-2xl p-4 mt-6">
                 <p className="text-blue-200">
                   📚 <strong>Source:</strong> NIH Body Weight Planner – 
                   <a href="https://www.niddk.nih.gov/health-information/weight-management/body-weight-planner" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline ml-1">
@@ -210,23 +210,23 @@ const HowWeCalculate: React.FC = () => {
               <h3 className="text-2xl font-semibold mb-4">General macro rules we use:</h3>
               
               <div className="space-y-4 mb-6">
-                <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-4">
+                <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-4">
                   <span className="text-orange-400 font-semibold">Protein:</span>
                   <span className="text-neutral-300 ml-2">1.6–2.2g per kg of body weight (higher for fat loss & athletes)</span>
                 </div>
-                <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-4">
+                <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-4">
                   <span className="text-yellow-400 font-semibold">Fat:</span>
                   <span className="text-neutral-300 ml-2">~25–30% of daily calories</span>
                 </div>
-                <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-4">
+                <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-4">
                   <span className="text-blue-400 font-semibold">Carbs:</span>
                   <span className="text-neutral-300 ml-2">Remaining calories after protein & fat are set</span>
                 </div>
               </div>
 
-              <div className="bg-blue-950/50 border border-blue-800/50 rounded-xl p-5">
+              <div className="bg-blue-950/50 border border-blue-800/50 rounded-2xl p-5">
                 <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-2xl flex items-center justify-center">
                     <svg className="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
@@ -273,9 +273,9 @@ const HowWeCalculate: React.FC = () => {
                 </li>
               </ul>
 
-              <div className="bg-blue-950/50 border border-blue-800/50 rounded-xl p-5">
+              <div className="bg-blue-950/50 border border-blue-800/50 rounded-2xl p-5">
                 <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-2xl flex items-center justify-center">
                     <svg className="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
@@ -383,7 +383,7 @@ const HowWeCalculate: React.FC = () => {
                 Explore the references we use to build your plan:
               </p>
               
-              <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-6">
+              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6">
                 <ul className="space-y-3 text-blue-400">
                   <li>
                     <a href="https://pubmed.ncbi.nlm.nih.gov/2305711/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 underline">
@@ -426,7 +426,7 @@ const HowWeCalculate: React.FC = () => {
 
             {/* Contact */}
             <section className="mb-12">
-              <div className="bg-green-950 border border-green-800 rounded-lg p-6">
+              <div className="bg-green-950 border border-green-800 rounded-2xl p-6">
                 <p className="text-green-200 text-lg">
                   If you have questions about your current calorie or macro target, feel free to reach out to our team at{' '}
                   <a href="mailto:hi@calistant.com" className="text-green-400 hover:text-green-300 underline font-semibold">

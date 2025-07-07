@@ -20,7 +20,7 @@ const Features: React.FC = () => {
 
             {/* Content Placeholder */}
             <section className="mb-12">
-              <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-8 text-center">
+              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Coming Soon</h2>
                 <p className="text-neutral-400 text-lg">
                   This page is under construction. Check back soon for detailed feature information.

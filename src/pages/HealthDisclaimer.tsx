@@ -14,16 +14,16 @@ const HealthDisclaimer: React.FC = () => {
             <div className="mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Health Disclaimer</h1>
               <div className="text-neutral-400 text-lg">
-                <p>Important health and medical disclaimers for using Calistant.</p>
+                <p>Important health and medical information regarding the use of Calistant.</p>
               </div>
             </div>
 
             {/* Content Placeholder */}
             <section className="mb-12">
-              <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-8 text-center">
+              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Coming Soon</h2>
                 <p className="text-neutral-400 text-lg">
-                  This page is under construction. Check back soon for our health disclaimer.
+                  This page is under construction. Check back soon for important health disclaimers and medical information.
                 </p>
               </div>
             </section>

@@ -14,16 +14,16 @@ const PressKit: React.FC = () => {
             <div className="mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Press Kit</h1>
               <div className="text-neutral-400 text-lg">
-                <p>Media resources, logos, and information for journalists and content creators.</p>
+                <p>Download press materials, logos, and learn more about Calistant for media coverage.</p>
               </div>
             </div>
 
             {/* Content Placeholder */}
             <section className="mb-12">
-              <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-8 text-center">
+              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Coming Soon</h2>
                 <p className="text-neutral-400 text-lg">
-                  This page is under construction. Check back soon for press resources and media assets.
+                  This page is under construction. Check back soon for press materials and media resources.
                 </p>
               </div>
             </section>

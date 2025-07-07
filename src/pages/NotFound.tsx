@@ -44,7 +44,7 @@ const NotFound = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link 
                 to="/" 
-                className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+                className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-2xl transition-colors duration-200"
               >
                 <Icon icon={homeIcon} className="w-5 h-5 mr-2" />
                 Go Back Home
@@ -52,7 +52,7 @@ const NotFound = () => {
               
               <button 
                 onClick={() => window.history.back()} 
-                className="flex items-center justify-center bg-neutral-800 hover:bg-neutral-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 border border-neutral-700"
+                className="flex items-center justify-center bg-neutral-800 hover:bg-neutral-700 text-white font-semibold px-6 py-3 rounded-2xl transition-colors duration-200 border border-neutral-700"
               >
                 Go Back
               </button>
