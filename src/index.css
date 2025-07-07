@@ -102,3 +102,12 @@
     @apply bg-background text-foreground font-geist;
   }
 }
+
+/* Social Icon Styles */
+.social-icon-gray {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(95%);
+}
+
+.social-icon-white {
+  filter: brightness(0) saturate(100%) invert(1);
+}

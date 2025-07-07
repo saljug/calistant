@@ -97,16 +97,34 @@
     }
   },
   "footer": {
-    "about": "About",
-    "ourTeam": "Our Team",
-    "privacyPolicy": "Privacy Policy",
-    "terms": "Terms",
+    "cta": {
+      "title": "Try Calistant for free",
+      "subtitle": "Download and start using your custom nutrition plan and AI-powered food logging today. No subscription required."
+    },
+    "sections": {
+      "learnMore": "Learn more",
+      "resources": "Resources",
+      "connect": "Connect with us"
+    },
+    "links": {
+      "aboutApp": "About the app",
+      "howWeCalculate": "How we calculate", 
+      "ourTeam": "Our team",
+      "pressKit": "Press kit",
+      "helpCenter": "Help center",
+      "features": "Features",
+      "privacyPolicy": "Privacy Policy",
+      "terms": "Terms",
+      "cookieNotice": "Cookie Notice",
+      "healthDisclaimer": "Health Disclaimer"
+    },
     "backedBy": "Backed by",
     "copyright": "© 2025 Calistant",
     "socialAlt": {
       "instagram": "Follow us on Instagram",
       "twitter": "Follow us on X (Twitter)",
-      "linkedin": "Follow us on LinkedIn"
+      "linkedin": "Follow us on LinkedIn",
+      "reddit": "Join us on Reddit"
     }
   },
   "pages": {
@@ -222,6 +240,43 @@
       "title": "Page Not Found",
       "message": "The page you're looking for doesn't exist.",
       "backHome": "Back to Home"
+    },
+    "howWeCalculate": {
+      "title": "How We Calculate",
+      "subtitle": "Understanding the science behind your personalized nutrition recommendations",
+      "disclaimer": {
+        "title": "Important Note",
+        "content": "Calistant is not a medical application. We do not offer medical advice. Any and all recommendations should be viewed as suggestions. Always consult with a healthcare professional before making significant changes to your diet, nutrition, or physical activity plan."
+      },
+      "bmr": {
+        "title": "Basal Metabolic Rate (BMR)",
+        "description": "BMR represents the minimum energy your body needs to maintain basic physiological functions at rest. We use the Mifflin-St Jeor equation, which is considered the most accurate for most people.",
+        "equations": {
+          "men": "For Men: BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) + 5",
+          "women": "For Women: BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) - 161"
+        },
+        "source": "Source: Mifflin MD et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals."
+      },
+      "tdee": {
+        "title": "Total Daily Energy Expenditure (TDEE)",
+        "description": "TDEE estimates how many calories you burn in a full day, including exercise and daily activities. We multiply your BMR by an activity factor:",
+        "table": {
+          "activityLevel": "Activity Level",
+          "multiplier": "Multiplier",
+          "sedentary": "Sedentary (little/no exercise)",
+          "lightlyActive": "Lightly active (1–2 days/week)",
+          "moderatelyActive": "Moderately active (3–5 days/week)",
+          "veryActive": "Very active (6–7 days/week)",
+          "superActive": "Super active (twice/day training or hard labor)"
+        }
+      },
+      "goals": {
+        "title": "Goal-Based Calorie Adjustments",
+        "description": "Based on your selected goal, we adjust your TDEE:",
+        "fatLoss": "Fat Loss: TDEE - 300-500 calories (moderate deficit)",
+        "maintenance": "Maintenance: TDEE (no adjustment)",
+        "muscleGain": "Muscle Gain: TDEE + 200-400 calories (moderate surplus)"
+      }
     }
   },
   "cta": {

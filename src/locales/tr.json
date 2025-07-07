@@ -97,16 +97,34 @@
     }
   },
   "footer": {
-    "about": "Hakkında",
-    "ourTeam": "Ekibimiz",
-    "privacyPolicy": "Gizlilik Politikası",
-    "terms": "Şartlar",
+    "cta": {
+      "title": "Calistant'ı ücretsiz dene",
+      "subtitle": "Özel beslenme planınızı ve AI destekli besin kaydınızı bugün indirin ve kullanmaya başlayın. Abonelik gerekmez."
+    },
+    "sections": {
+      "learnMore": "Daha fazla öğren",
+      "resources": "Kaynaklar",
+      "connect": "Bize ulaşın"
+    },
+    "links": {
+      "aboutApp": "Uygulama hakkında",
+      "howWeCalculate": "Nasıl hesaplıyoruz",
+      "ourTeam": "Ekibimiz",
+      "pressKit": "Basın kiti",
+      "helpCenter": "Yardım merkezi",
+      "features": "Özellikler",
+      "privacyPolicy": "Gizlilik Politikası",
+      "terms": "Şartlar",
+      "cookieNotice": "Çerez Bildirimi",
+      "healthDisclaimer": "Sağlık Feragatnamesi"
+    },
     "backedBy": "Destekçi",
     "copyright": "© 2025 Calistant",
     "socialAlt": {
       "instagram": "Instagram'da takip et",
       "twitter": "X'te (Twitter) takip et",
-      "linkedin": "LinkedIn'de takip et"
+      "linkedin": "LinkedIn'de takip et",
+      "reddit": "Reddit'te bize katıl"
     }
   },
   "pages": {
@@ -222,6 +240,43 @@
       "title": "Sayfa Bulunamadı",
       "message": "Aradığınız sayfa mevcut değil.",
       "backHome": "Ana Sayfaya Dön"
+    },
+    "howWeCalculate": {
+      "title": "Nasıl Hesaplıyoruz",
+      "subtitle": "Kişiselleştirilmiş beslenme önerilerinizin arkasındaki bilimi anlama",
+      "disclaimer": {
+        "title": "Önemli Not",
+        "content": "Calistant bir tıbbi uygulama değildir. Tıbbi tavsiye vermiyoruz. Tüm öneriler sadece öneri olarak görülmelidir. Diet, beslenme veya fiziksel aktivite planınızda önemli değişiklikler yapmadan önce mutlaka bir sağlık uzmanına danışın."
+      },
+      "bmr": {
+        "title": "Bazal Metabolizma Hızı (BMR)",
+        "description": "BMR, vücudunuzun dinlenme halinde temel fizyolojik fonksiyonları sürdürmek için ihtiyaç duyduğu minimum enerjiyi temsil eder. Çoğu insan için en doğru kabul edilen Mifflin-St Jeor denklemini kullanıyoruz.",
+        "equations": {
+          "men": "Erkekler için: BMR = (10 × kg cinsinden kilo) + (6.25 × cm cinsinden boy) - (5 × yaş) + 5",
+          "women": "Kadınlar için: BMR = (10 × kg cinsinden kilo) + (6.25 × cm cinsinden boy) - (5 × yaş) - 161"
+        },
+        "source": "Kaynak: Mifflin MD et al. (1990). Sağlıklı bireylerde dinlenme halindeki enerji harcaması için yeni bir tahmin denklemi."
+      },
+      "tdee": {
+        "title": "Toplam Günlük Enerji Harcaması (TDEE)",
+        "description": "TDEE, egzersiz ve günlük aktiviteler dahil olmak üzere bir gün boyunca yaktığınız kalori miktarını tahmin eder. BMR'nizi bir aktivite faktörüyle çarpıyoruz:",
+        "table": {
+          "activityLevel": "Aktivite Seviyesi",
+          "multiplier": "Çarpan",
+          "sedentary": "Hareketsiz (az/hiç egzersiz)",
+          "lightlyActive": "Hafif aktif (haftada 1-2 gün)",
+          "moderatelyActive": "Orta derecede aktif (haftada 3-5 gün)",
+          "veryActive": "Çok aktif (haftada 6-7 gün)",
+          "superActive": "Süper aktif (günde iki kez antrenman veya ağır iş)"
+        }
+      },
+      "goals": {
+        "title": "Hedefe Dayalı Kalori Ayarlamaları",
+        "description": "Seçtiğiniz hedefe göre TDEE'nizi ayarlıyoruz:",
+        "fatLoss": "Yağ Kaybı: TDEE - 300-500 kalori (orta düzey açık)",
+        "maintenance": "Koruma: TDEE (ayarlama yok)",
+        "muscleGain": "Kas Kazanımı: TDEE + 200-400 kalori (orta düzey fazlalık)"
+      }
     }
   },
   "cta": {

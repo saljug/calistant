@@ -10,7 +10,7 @@ const PrivacyPolicy: React.FC = () => {
       <Navigation />
       
       <main className="w-full flex flex-col items-center">
-        <div className="max-w-4xl mx-auto px-4 md:px-6 pt-28 md:pt-36 pb-16 md:pb-24">
+        <div className="max-w-4xl mx-auto px-4 md:px-6 pt-28 md:pt-36 pb-8 md:pb-12">
           <div className="text-white font-geist">
             {/* Header */}
             <div className="mb-12">
