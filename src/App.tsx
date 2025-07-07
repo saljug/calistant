@@ -15,6 +15,7 @@ import PressKit from "./pages/PressKit";
 import HelpCenter from "./pages/HelpCenter";
 import CookieNotice from "./pages/CookieNotice";
 import HealthDisclaimer from "./pages/HealthDisclaimer";
+import DeleteAccount from "./pages/DeleteAccount";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/help-center" element={<HelpCenter />} />
           <Route path="/cookie-notice" element={<CookieNotice />} />
           <Route path="/health-disclaimer" element={<HealthDisclaimer />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
