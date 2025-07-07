@@ -2,6 +2,10 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { Icon } from '@iconify/react';
+import clipboardIcon from '@iconify/icons-solar/clipboard-list-bold';
+import warningTriangleIcon from '@iconify/icons-solar/danger-triangle-bold';
+import shieldCheckIcon from '@iconify/icons-solar/shield-check-bold';
 
 const DeleteAccount: React.FC = () => {
   const { t } = useTranslation();
@@ -47,7 +51,10 @@ const DeleteAccount: React.FC = () => {
             {/* Data Deletion Info */}
             <section className="mb-12">
               <div className="bg-blue-950/20 border border-blue-800/30 rounded-lg p-6 mb-8">
-                <h3 className="text-xl font-semibold mb-4 text-blue-200">📋 We delete the following data upon request:</h3>
+                <h3 className="text-xl font-semibold mb-4 text-blue-200 flex items-center">
+                  <Icon icon={clipboardIcon} className="w-5 h-5 mr-2" />
+                  We delete the following data upon request:
+                </h3>
                 <ul className="space-y-3 text-neutral-300 text-lg leading-relaxed ml-6">
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">•</span>
@@ -61,8 +68,9 @@ const DeleteAccount: React.FC = () => {
               </div>
               
               <div className="bg-red-950/20 border border-red-800/30 rounded-lg p-6">
-                <p className="text-red-200 text-lg leading-relaxed font-semibold">
-                  ⚠️ All deletions are permanent and processed immediately.
+                <p className="text-red-200 text-lg leading-relaxed font-semibold flex items-center">
+                  <Icon icon={warningTriangleIcon} className="w-5 h-5 mr-2" />
+                  All deletions are permanent and processed immediately.
                 </p>
               </div>
             </section>
@@ -86,7 +94,8 @@ const DeleteAccount: React.FC = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6">Data Retention</h2>
               <div className="bg-green-950/20 border border-green-800/30 rounded-lg p-6">
-                <p className="text-green-200 text-lg leading-relaxed mb-4">
+                <p className="text-green-200 text-lg leading-relaxed mb-4 flex items-center">
+                  <Icon icon={shieldCheckIcon} className="w-5 h-5 mr-2" />
                   <strong>We do not retain deleted user data.</strong> Any backups are overwritten within 7 days.
                 </p>
                 <p className="text-neutral-300 text-lg leading-relaxed">
